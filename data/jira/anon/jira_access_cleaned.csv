@@ -1,0 +1,529 @@
+ticket,As.Of.Date,DataAccessReplicationTeam,mc_number_anon,MCStatus,Journal,cases,DCAF_Access_Restrictions_V2,Privately_shareable
+AEAREP-6661,2025-10-01T15:22:55.068-0400,,1,CA,AEJ:Macro,1,No,No
+AEAREP-6677,2025-08-25T22:45:30.849-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",2,CA,AER,1,Very Easy to Obtain,Yes
+AEAREP-6676,2025-12-05T10:48:23.588-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",3,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,Yes
+AEAREP-6676,2025-12-05T10:48:23.588-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",3,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-6675,2025-07-10T22:19:20.413-0400,,4,CA,AEJ:Economic Policy,2,No,No
+AEAREP-7893,2025-12-01T14:34:41.939-0500,,4,"CA, Revision",AEJ:Economic Policy,2,No,No
+AEAREP-6685,2025-10-01T15:20:25.829-0400,,5,"CA, Revision",AEJ:Macro,1,No,No
+AEAREP-6684,2025-09-30T14:20:22.933-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",6,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-6683,2025-09-22T04:10:54.467-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",7,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-6682,2025-08-25T22:50:27.378-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",8,"CA, Revision",AER,1,Very Difficult to Obtain,Yes
+AEAREP-6681,2025-07-28T14:37:17.878-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",9,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-6689,2025-03-04T19:38:13.448-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",11,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-6688,2025-10-03T15:58:14.833-0400,,12,CA,AEJ:Macro,2,No,No
+AEAREP-8274,2025-12-04T08:30:18.751-0500,,12,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-6690,2025-01-09T23:53:59.385-0500,,13,CA,JEL,2,No,No
+AEAREP-6696,2025-09-02T13:20:02.972-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",13,"CA, Revision",JEL,2,No,No
+AEAREP-6702,2025-10-31T07:46:42.190-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",14,"CA, Revision",AEJ:Economic Policy,1,Moderately Difficult to Obtain,Yes
+AEAREP-6787,2025-12-05T10:32:44.884-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",16,CA,AEJ:Applied Economics,1,Very Difficult to Obtain,No
+AEAREP-6699,2025-08-25T22:51:26.028-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",17,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-6698,2025-08-17T16:44:38.001-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",18,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-6698,2025-08-17T16:44:38.001-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",18,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-6697,2025-12-05T10:43:33.896-0500,,19,CA,AEJ:Macro,1,No,No
+AEAREP-6704,2025-08-26T23:00:53.506-0400,,20,"CA, Revision",AER,1,Very Easy to Obtain,No
+AEAREP-6703,2025-08-26T22:59:47.708-0400,,21,CA,AER,1,No,No
+AEAREP-6709,2025-08-26T23:19:56.373-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",22,CA,AER,1,Very Easy to Obtain,No
+AEAREP-6709,2025-08-26T23:19:56.373-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",22,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-6719,2025-09-03T11:55:30.331-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",24,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,Yes
+AEAREP-6719,2025-09-03T11:55:30.331-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",24,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-6718,2025-10-31T07:49:38.442-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",25,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-6717,2025-09-09T14:21:07.802-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",26,CA,AEJ:Micro,1,Moderately Easy to Obtain,Yes
+AEAREP-6724,2025-03-30T13:17:08.412-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",27,"CA, Revision",AER:Insights,2,Very Easy to Obtain,No
+AEAREP-7239,2025-12-03T10:46:49.360-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",27,"CA, Revision",AER:Insights,2,Very Easy to Obtain,No
+AEAREP-6723,2025-04-04T13:20:44.183-0400,,28,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-7288,2025-11-06T13:51:07.030-0500,,28,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-6722,2025-10-30T10:51:16.528-0400,,29,CA,AEJ:Micro,1,No,No
+AEAREP-6727,2025-10-01T15:26:00.072-0400,,30,CA,AEJ:Macro,1,No,No
+AEAREP-6741,2025-03-10T08:22:43.110-0400,,32,"CA, Revision",JEL,1,Very Easy to Obtain,No
+AEAREP-6751,2025-08-26T23:36:08.156-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",34,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-6751,2025-08-26T23:36:08.156-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",34,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-6749,2025-08-30T17:57:05.697-0400,,35,CA,AEJ:Macro,1,No,No
+AEAREP-6742,2025-01-09T14:45:27.460-0500,,36,CA,AER:Insights,2,No,No
+AEAREP-6799,2025-11-06T15:35:26.602-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",36,"CA, Revision",AER:Insights,2,Very Easy to Obtain,No
+AEAREP-7159,2025-12-05T09:27:37.265-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",37,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,No
+AEAREP-7217,2025-11-17T15:02:05.297-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",38,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,Yes
+AEAREP-6962,2025-11-17T15:01:28.632-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",39,CA,AEJ:Applied Economics,1,Very Easy to Obtain,Yes
+AEAREP-6962,2025-11-17T15:01:28.632-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",39,CA,AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7204,2025-11-06T14:14:05.260-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",40,"CA, Revision",AER:Insights,2,Very Easy to Obtain,Yes
+AEAREP-6757,2025-11-06T15:47:42.604-0500,,40,CA,AER:Insights,2,Very Easy to Obtain,No
+AEAREP-6756,2025-12-03T10:49:04.782-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",41,"CA, Revision",AER:Insights,1,Moderately Difficult to Obtain,Yes
+AEAREP-6754,2025-08-27T00:11:58.879-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",42,CA,AER,1,Very Easy to Obtain,No
+AEAREP-6754,2025-08-27T00:11:58.879-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",42,CA,AER,1,Moderately Easy to Obtain,No
+AEAREP-7127,2025-11-17T15:00:46.201-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",43,CA,AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-6763,2025-11-06T15:44:49.203-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",44,"CA, Revision",AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-6761,2025-11-06T15:45:30.819-0500,,45,CA,JEP,1,No,No
+AEAREP-6782,2025-11-20T09:53:00.832-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",46,"CA, Revision",AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-6944,2025-11-06T15:13:01.155-0500,,47,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-6780,2025-11-06T15:42:57.114-0500,,47,CA,AEJ:Macro,2,No,No
+AEAREP-6793,2025-11-06T15:40:38.676-0500,,48,"CA, Revision",AEJ:Macro,1,No,No
+AEAREP-6788,2025-11-06T15:41:08.368-0500,,49,CA,AEJ:Applied Economics,1,No,No
+AEAREP-6800,2025-11-06T15:34:25.120-0500,,50,CA,AER,1,No,No
+AEAREP-6798,2025-08-27T00:14:41.307-0400,,51,CA,AER,1,No,No
+AEAREP-6797,2025-11-06T15:37:17.765-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",52,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-6796,2025-11-06T15:40:08.866-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",53,"CA, Revision",AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-6796,2025-11-06T15:40:08.866-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",53,"CA, Revision",AER,1,Very Difficult to Obtain,Yes
+AEAREP-8362,2025-11-19T21:41:59.677-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",55,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,No
+AEAREP-8045,2025-08-22T19:22:50.105-0400,,57,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-7270,2025-11-06T13:55:04.733-0500,,59,"CA, Revision",AER,2,No,No
+AEAREP-6867,2025-11-06T15:30:33.509-0500,,59,CA,AER,2,No,No
+AEAREP-6866,2025-11-06T15:31:14.942-0500,,60,"CA, Revision",AER,1,No,No
+AEAREP-6865,2025-11-06T15:31:46.779-0500,,61,"CA, Revision",AER,1,Very Easy to Obtain,No
+AEAREP-6877,2025-11-06T15:26:42.081-0500,,62,CA,AEJ:Micro,1,Moderately Difficult to Obtain,No
+AEAREP-6874,2025-11-06T15:27:16.215-0500,,65,CA,AER,1,No,No
+AEAREP-6873,2025-12-03T13:32:47.582-0500,,66,"CA, Revision",AEJ:Macro,1,No,No
+AEAREP-6871,2025-08-27T00:19:02.795-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",68,CA,AER,2,Very Easy to Obtain,No
+AEAREP-6871,2025-08-27T00:19:02.795-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",68,CA,AER,2,Moderately Difficult to Obtain,No
+AEAREP-6871,2025-08-27T00:19:02.795-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",68,CA,AER,2,Very Difficult to Obtain,No
+AEAREP-7924,2025-10-31T15:15:34.543-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",68,"CA, Revision",AER,2,Very Easy to Obtain,No
+AEAREP-7924,2025-10-31T15:15:34.543-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",68,"CA, Revision",AER,2,Moderately Difficult to Obtain,No
+AEAREP-7924,2025-10-31T15:15:34.543-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",68,"CA, Revision",AER,2,Very Difficult to Obtain,No
+AEAREP-6887,2025-08-27T00:20:10.467-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",69,CA,AER,1,No,No
+AEAREP-6887,2025-08-27T00:20:10.467-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",69,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-6891,2025-11-06T15:24:46.702-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",71,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-6890,2025-08-27T00:20:35.825-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",72,"CA, Revision",AER,1,Very Difficult to Obtain,No
+AEAREP-6894,2025-11-06T15:21:56.872-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",73,CA,AEJ:Economic Policy,1,Very Easy to Obtain,No
+AEAREP-6893,2025-11-06T15:23:27.787-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",74,CA,AER,1,Moderately Easy to Obtain,Yes
+AEAREP-6893,2025-11-06T15:23:27.787-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",74,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-6893,2025-11-06T15:23:27.787-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",74,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-6892,2025-08-27T00:22:19.097-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",75,"CA, Revision",AER,1,Very Easy to Obtain,No
+AEAREP-6903,2025-11-06T15:17:27.603-0500,,76,"CA, Revision",AEJ:Macro,1,No,No
+AEAREP-6902,2025-11-06T15:18:23.274-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",77,"CA, Revision",AEJ:Economic Policy,1,Very Easy to Obtain,Yes
+AEAREP-6900,2025-08-27T00:23:31.394-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",78,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-6897,2025-05-07T09:47:53.509-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",79,CA,AEJ:Applied Economics,2,Very Difficult to Obtain,No
+AEAREP-7310,2025-11-17T15:01:03.340-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",79,"CA, Revision",AEJ:Applied Economics,2,Very Difficult to Obtain,No
+AEAREP-8096,2025-11-03T17:05:21.781-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",80,"CA, Revision",AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-6896,2025-11-06T15:20:18.443-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",80,"CA, Revision",AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7283,2025-11-06T13:51:51.198-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",81,"CA, Revision",AEJ:Macro,2,Moderately Difficult to Obtain,Yes
+AEAREP-6895,2025-11-06T15:21:06.019-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",81,CA,AEJ:Macro,2,Moderately Difficult to Obtain,Yes
+AEAREP-6921,2025-11-06T15:16:13.602-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",83,"CA, Revision",AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-7184,2025-11-17T14:59:33.538-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",84,"CA, Revision",AEJ:Applied Economics,1,Very Easy to Obtain,Yes
+AEAREP-7850,2025-11-17T15:02:19.550-0500,,85,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-6927,2025-12-05T10:29:18.529-0500,,86,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-6945,2025-11-06T15:12:21.643-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",87,CA,AEJ:Macro,1,Very Easy to Obtain,Yes
+AEAREP-6943,2025-11-06T15:13:31.160-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",88,CA,AER:Insights,2,Very Easy to Obtain,No
+AEAREP-6943,2025-11-06T15:13:31.160-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",88,CA,AER:Insights,2,Moderately Easy to Obtain,No
+AEAREP-6943,2025-11-06T15:13:31.160-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",88,CA,AER:Insights,2,Moderately Difficult to Obtain,No
+AEAREP-8072,2025-12-02T13:33:06.913-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",88,"CA, Revision",AER:Insights,2,Very Easy to Obtain,Yes
+AEAREP-8072,2025-12-02T13:33:06.913-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",88,"CA, Revision",AER:Insights,2,Moderately Easy to Obtain,Yes
+AEAREP-8072,2025-12-02T13:33:06.913-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",88,"CA, Revision",AER:Insights,2,Moderately Difficult to Obtain,Yes
+AEAREP-6960,2025-08-27T00:26:10.059-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",89,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-6961,2025-12-03T10:50:43.274-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",91,CA,AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-6969,2025-11-06T15:03:22.472-0500,,92,CA,JEL,1,No,No
+AEAREP-6968,2025-11-06T15:04:03.190-0500,,93,CA,AEJ:Macro,2,No,No
+AEAREP-8375,2025-11-13T11:31:42.525-0500,,93,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-7728,2025-11-06T09:22:47.934-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",94,"CA, Revision",AEJ:Macro,2,Moderately Easy to Obtain,No
+AEAREP-6967,2025-11-06T15:04:41.291-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",94,CA,AEJ:Macro,2,Moderately Easy to Obtain,No
+AEAREP-6966,2025-12-03T10:32:47.059-0500,,95,"CA, Revision",AER:Insights,1,No,No
+AEAREP-7743,2025-11-06T09:14:05.081-0500,,96,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-6996,2025-11-06T14:59:35.594-0500,,96,CA,AEJ:Macro,2,No,No
+AEAREP-6995,2025-11-06T15:00:25.954-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",97,CA,JEP,1,Moderately Difficult to Obtain,Yes
+AEAREP-6991,2025-11-06T15:01:25.906-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",98,CA,AEJ:Macro,1,Very Easy to Obtain,Yes
+AEAREP-6991,2025-11-06T15:01:25.906-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",98,CA,AEJ:Macro,1,Moderately Easy to Obtain,Yes
+AEAREP-6989,2025-12-03T14:11:58.520-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",99,"CA, Revision",AEJ:Economic Policy,1,Very Easy to Obtain,No
+AEAREP-6989,2025-12-03T14:11:58.520-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",99,"CA, Revision",AEJ:Economic Policy,1,Moderately Easy to Obtain,No
+AEAREP-6989,2025-12-03T14:11:58.520-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",99,"CA, Revision",AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-6976,2025-11-06T15:02:47.983-0500,,100,CA,AER:Insights,1,No,No
+AEAREP-7002,2025-08-12T11:46:08.858-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",106,CA,AER,2,Very Difficult to Obtain,No
+AEAREP-7614,2025-09-12T13:35:32.694-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",106,"CA, Revision",AER,2,Moderately Difficult to Obtain,No
+AEAREP-7010,2025-11-06T14:54:10.002-0500,,109,CA,JEP,1,No,No
+AEAREP-7024,2025-11-06T14:52:05.216-0500,,110,CA,AEJ:Economic Policy,2,No,No
+AEAREP-7888,2025-11-17T15:05:42.617-0500,,110,"CA, Revision",AEJ:Economic Policy,2,No,No
+AEAREP-7018,2025-11-06T14:52:36.880-0500,,112,CA,AEJ:Macro,2,No,No
+AEAREP-7741,2025-12-05T08:05:51.798-0500,,112,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-7017,2025-12-03T10:53:12.896-0500,,113,CA,AER:Insights,1,No,No
+AEAREP-7419,2025-11-06T10:23:10.031-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",114,"CA, Revision",AEJ:Applied Economics,2,Moderately Difficult to Obtain,Yes
+AEAREP-7581,2025-11-17T14:59:57.512-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",114,"CA, Revision",AEJ:Applied Economics,2,Very Easy to Obtain,Yes
+AEAREP-7581,2025-11-17T14:59:57.512-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",114,"CA, Revision",AEJ:Applied Economics,2,Moderately Difficult to Obtain,Yes
+AEAREP-7026,2025-12-03T11:13:53.210-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",115,CA,AER,1,Very Easy to Obtain,No
+AEAREP-7025,2025-12-05T10:22:57.061-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",116,CA,AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-7043,2025-11-06T14:48:40.600-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",119,CA,JEL,1,Very Easy to Obtain,No
+AEAREP-7040,2025-08-27T00:29:47.579-0400,,121,CA,AER,1,No,No
+AEAREP-7045,2025-08-27T00:31:14.911-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",122,CA,AER,1,Very Easy to Obtain,Yes
+AEAREP-7044,2025-11-06T14:48:11.559-0500,,123,CA,AER,1,No,No
+AEAREP-7054,2025-11-06T14:45:49.090-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",124,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7687,2025-11-06T09:48:51.136-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",125,"CA, Revision",AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-7053,2025-11-06T14:46:30.120-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",125,CA,AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-7052,2025-12-05T10:21:04.747-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",126,"CA, Revision",AEJ:Applied Economics,1,Very Easy to Obtain,No
+AEAREP-7052,2025-12-05T10:21:04.747-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",126,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,No
+AEAREP-7052,2025-12-05T10:21:04.747-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",126,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-7063,2025-08-27T00:33:28.375-0400,,128,CA,AER,1,No,No
+AEAREP-7062,2025-08-27T00:32:59.723-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",129,CA,AER,2,No,No
+AEAREP-7412,2025-11-06T10:25:43.426-0500,,129,"CA, Revision",AER,2,No,No
+AEAREP-7077,2025-12-05T10:13:55.762-0500,,130,"CA, Revision",AEJ:Macro,1,No,No
+AEAREP-7088,2025-11-06T14:38:39.022-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",131,CA,AER:Insights,2,Moderately Difficult to Obtain,No
+AEAREP-7413,2025-11-13T09:17:55.218-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",131,"CA, Revision",AER:Insights,2,Moderately Difficult to Obtain,No
+AEAREP-7590,2025-11-06T10:04:52.495-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",132,"CA, Revision",AER,2,Very Difficult to Obtain,No
+AEAREP-7087,2025-11-06T14:39:51.478-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",132,CA,AER,2,Very Difficult to Obtain,No
+AEAREP-7091,2025-08-27T00:34:46.058-0400,,135,"CA, Revision",AER,1,Very Easy to Obtain,Yes
+AEAREP-7091,2025-08-27T00:34:46.058-0400,,135,"CA, Revision",AER,1,Very Difficult to Obtain,Yes
+AEAREP-7120,2025-12-05T09:36:21.720-0500,,137,"CA, Revision",AEJ:Macro,1,No,No
+AEAREP-7534,2025-11-06T10:12:28.763-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",138,"CA, Revision",JEL,2,Very Easy to Obtain,No
+AEAREP-7119,2025-11-06T14:35:23.341-0500,,138,CA,JEL,2,No,No
+AEAREP-7116,2025-11-06T14:35:48.306-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",139,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-7111,2025-08-27T00:35:25.557-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",140,CA,AER,2,Very Difficult to Obtain,Yes
+AEAREP-7727,2025-11-06T09:23:46.486-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",140,"CA, Revision",AER,2,Very Difficult to Obtain,Yes
+AEAREP-8223,2025-11-28T19:43:55.955-0500,,141,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-7129,2025-12-03T11:05:24.182-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",142,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7128,2025-11-06T14:32:56.199-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",143,CA,AER:Insights,2,Very Easy to Obtain,Yes
+AEAREP-7128,2025-11-06T14:32:56.199-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",143,CA,AER:Insights,2,Moderately Difficult to Obtain,Yes
+AEAREP-8365,2025-12-03T21:29:12.120-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",143,"CA, Revision",AER:Insights,2,Moderately Difficult to Obtain,Yes
+AEAREP-7806,2025-11-06T08:53:19.353-0500,,145,"CA, Revision",AER,2,No,No
+AEAREP-7137,2025-11-06T14:30:23.641-0500,,145,CA,AER,2,No,No
+AEAREP-7136,2025-04-02T11:45:47.336-0400,,146,CA,AEJ:Economic Policy,4,No,No
+AEAREP-7275,2025-06-24T20:41:21.268-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",146,"CA, Revision",AEJ:Economic Policy,4,Moderately Difficult to Obtain,No
+AEAREP-7811,2025-10-09T11:04:21.753-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",146,"CA, Revision",AEJ:Economic Policy,4,Very Difficult to Obtain,No
+AEAREP-8309,2025-12-01T17:09:42.497-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",146,"CA, Revision",AEJ:Economic Policy,4,Very Difficult to Obtain,No
+AEAREP-7408,2025-11-06T10:27:18.308-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",147,"CA, Revision",AER:Insights,2,Very Easy to Obtain,No
+AEAREP-7148,2025-11-06T14:27:21.268-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",147,CA,AER:Insights,2,Very Easy to Obtain,No
+AEAREP-7147,2025-11-06T14:28:05.933-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",148,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8417,2025-12-01T09:56:11.714-0500,,149,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-7145,2025-12-05T09:33:47.245-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",150,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-7154,2025-11-06T14:26:53.739-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",151,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-7163,2025-11-06T14:22:47.023-0500,,153,CA,AER,1,No,No
+AEAREP-7165,2025-11-06T14:22:21.520-0500,,154,CA,JEP,1,Moderately Difficult to Obtain,No
+AEAREP-7171,2025-11-06T14:19:14.664-0500,,155,CA,AER,1,No,No
+AEAREP-7170,2025-11-06T14:20:01.692-0500,,156,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7169,2025-11-06T14:20:35.260-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",157,CA,AEJ:Economic Policy,2,Very Easy to Obtain,No
+AEAREP-7929,2025-11-17T15:05:58.438-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",157,"CA, Revision",AEJ:Economic Policy,2,Very Easy to Obtain,No
+AEAREP-7168,2025-12-03T10:51:50.663-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",158,CA,AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-7180,2025-11-06T14:18:46.707-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",159,CA,JEP,1,Moderately Easy to Obtain,Yes
+AEAREP-7191,2025-11-06T14:16:30.785-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",160,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7190,2025-12-05T09:22:15.162-0500,,161,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-7195,2025-04-28T10:21:21.029-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",162,CA,AER,1,No,No
+AEAREP-8117,2025-12-04T22:02:27.950-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",163,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7205,2025-11-06T14:13:28.532-0500,,164,CA,AEJ:Macro,1,Very Easy to Obtain,No
+AEAREP-7205,2025-11-06T14:13:28.532-0500,,164,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-7218,2025-12-03T13:38:08.632-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",166,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7216,2025-11-06T14:12:39.744-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",167,CA,AER,2,Very Easy to Obtain,No
+AEAREP-7805,2025-12-03T11:04:00.550-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",167,"CA, Revision",AER,2,No,No
+AEAREP-7223,2025-11-06T14:10:40.243-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",168,CA,AER,1,No,No
+AEAREP-7220,2025-11-06T14:11:06.915-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",169,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7238,2025-11-06T14:08:43.752-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",170,CA,AER,1,Moderately Easy to Obtain,No
+AEAREP-7238,2025-11-06T14:08:43.752-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",170,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7238,2025-11-06T14:08:43.752-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",170,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7233,2025-11-06T14:09:25.017-0500,,171,CA,AEJ:Economic Policy,2,No,No
+AEAREP-8044,2025-11-17T15:10:09.608-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",171,"CA, Revision",AEJ:Economic Policy,2,No,No
+AEAREP-7231,2025-11-06T14:10:05.952-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>, <JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",172,CA,AER,1,Moderately Easy to Obtain,Yes
+AEAREP-7231,2025-11-06T14:10:05.952-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>, <JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",172,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7844,2025-10-19T20:28:27.119-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",174,CA,AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-7254,2025-11-06T14:03:24.008-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",175,CA,AEJ:Economic Policy,1,No,No
+AEAREP-7254,2025-11-06T14:03:24.008-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",175,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7253,2025-11-06T14:04:29.569-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",176,"CA, Update",AEJ:Applied Economics,1,Moderately Easy to Obtain,Yes
+AEAREP-7253,2025-11-06T14:04:29.569-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",176,"CA, Update",AEJ:Applied Economics,1,Very Difficult to Obtain,Yes
+AEAREP-7252,2025-11-06T14:06:19.059-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",177,CA,AER:Insights,1,Moderately Difficult to Obtain,No
+AEAREP-7713,2025-11-17T15:00:30.549-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",178,CA,AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7269,2025-12-03T14:11:41.094-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",179,CA,AEJ:Economic Policy,1,Very Easy to Obtain,No
+AEAREP-7269,2025-12-03T14:11:41.094-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",179,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7268,2025-11-06T13:57:57.838-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",180,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7268,2025-11-06T13:57:57.838-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",180,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7278,2025-11-06T13:54:11.460-0500,,181,"CA, Revision",AER,1,No,No
+AEAREP-7281,2025-11-06T13:53:30.222-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",183,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7296,2025-11-06T13:48:19.090-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",185,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7295,2025-11-17T15:03:42.754-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",186,CA,AEJ:Micro,1,Very Difficult to Obtain,Yes
+AEAREP-7306,2025-11-19T10:52:09.769-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",187,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7304,2025-11-06T10:56:26.677-0500,,188,CA,AEJ:Macro,1,No,No
+AEAREP-7302,2025-11-24T12:51:35.307-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",190,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7301,2025-11-06T13:47:28.654-0500,,191,CA,AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-8101,2025-11-14T09:04:14.510-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",191,"CA, Revision",AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-7837,2025-10-03T14:12:40.404-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",192,"CA, Revision",AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7311,2025-11-06T10:52:53.410-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",192,CA,AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7316,2025-11-17T14:28:51.862-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",193,CA,AEJ:Macro,1,Moderately Easy to Obtain,Yes
+AEAREP-7315,2025-11-06T10:51:54.006-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",194,CA,AER,1,Very Easy to Obtain,No
+AEAREP-8378,2025-11-24T14:32:30.181-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",195,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,Yes
+AEAREP-7317,2025-11-06T10:50:34.952-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",196,CA,AER,1,Very Easy to Obtain,No
+AEAREP-7327,2025-11-06T10:49:00.449-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",197,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-7327,2025-11-06T10:49:00.449-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",197,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7332,2025-06-03T23:18:16.433-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",198,CA,AEJ:Macro,2,Very Easy to Obtain,Yes
+AEAREP-7689,2025-11-20T20:09:39.170-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",198,"CA, Revision",AEJ:Macro,2,Very Easy to Obtain,Yes
+AEAREP-7689,2025-11-20T20:09:39.170-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",198,"CA, Revision",AEJ:Macro,2,Moderately Easy to Obtain,Yes
+AEAREP-7689,2025-11-20T20:09:39.170-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",198,"CA, Revision",AEJ:Macro,2,Moderately Difficult to Obtain,Yes
+AEAREP-7689,2025-11-20T20:09:39.170-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",198,"CA, Revision",AEJ:Macro,2,Very Difficult to Obtain,Yes
+AEAREP-8095,2025-10-26T23:10:24.265-0400,,199,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-7333,2025-11-18T10:08:06.172-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",201,"CA, Revision",AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7339,2025-12-03T11:06:44.193-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",202,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7338,2025-11-06T10:44:16.656-0500,,203,CA,AER:Insights,1,No,No
+AEAREP-7354,2025-11-06T10:35:09.113-0500,,204,CA,AEJ:Macro,1,No,No
+AEAREP-7353,2025-11-06T10:35:57.504-0500,,205,CA,AEJ:Macro,1,No,No
+AEAREP-7352,2025-11-06T10:36:43.957-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",206,CA,AEJ:Macro,1,Moderately Easy to Obtain,Yes
+AEAREP-7351,2025-11-06T10:37:50.781-0500,,207,CA,AEJ:Macro,1,No,No
+AEAREP-7365,2025-11-06T10:32:21.841-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",209,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7362,2025-11-06T10:32:55.559-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",210,CA,AER,1,No,No
+AEAREP-7362,2025-11-06T10:32:55.559-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",210,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7360,2025-12-05T08:30:23.025-0500,,211,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-7357,2025-11-06T10:33:54.271-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",212,CA,AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-8069,2025-11-28T19:39:48.741-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",212,"CA, Revision",AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-7356,2025-12-03T10:30:17.837-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",213,CA,AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-7368,2025-11-06T10:31:07.908-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",214,CA,AEJ:Economic Policy,2,Very Easy to Obtain,Yes
+AEAREP-7368,2025-11-06T10:31:07.908-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",214,CA,AEJ:Economic Policy,2,Moderately Difficult to Obtain,Yes
+AEAREP-7368,2025-11-06T10:31:07.908-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",214,CA,AEJ:Economic Policy,2,Very Difficult to Obtain,Yes
+AEAREP-8213,2025-11-28T08:15:59.673-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",214,"CA, Revision",AEJ:Economic Policy,2,Moderately Difficult to Obtain,Yes
+AEAREP-8213,2025-11-28T08:15:59.673-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",214,"CA, Revision",AEJ:Economic Policy,2,Very Difficult to Obtain,Yes
+AEAREP-7367,2025-11-06T10:31:49.072-0500,,215,CA,AEJ:Macro,1,No,No
+AEAREP-7389,2025-11-06T10:26:44.542-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",218,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-7407,2025-11-06T10:27:49.341-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",220,CA,AER:Insights,1,Very Difficult to Obtain,Yes
+AEAREP-7831,2025-11-06T08:57:39.318-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",221,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7396,2025-11-06T10:29:55.888-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",223,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,Yes
+AEAREP-8043,2025-11-01T22:24:08.952-0400,,226,"CA, Revision",AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7414,2025-11-06T10:24:33.713-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",226,CA,AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7418,2025-11-06T10:23:56.343-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",231,CA,AEJ:Economic Policy,2,Very Easy to Obtain,No
+AEAREP-7418,2025-11-06T10:23:56.343-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",231,CA,AEJ:Economic Policy,2,Moderately Difficult to Obtain,No
+AEAREP-7943,2025-11-17T15:05:29.642-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",231,"CA, Revision",AEJ:Economic Policy,2,Moderately Difficult to Obtain,No
+AEAREP-7431,2025-12-03T13:38:21.583-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",232,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7430,2025-11-06T10:22:03.269-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",233,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7430,2025-11-06T10:22:03.269-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",233,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7429,2025-11-06T10:22:41.180-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",234,CA,AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-8371,2025-11-10T18:01:32.288-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",234,"CA, Revision",AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7440,2025-11-17T15:06:14.836-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",236,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,Yes
+AEAREP-7439,2025-11-12T10:58:50.626-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",237,CA,AER:Insights,1,Moderately Easy to Obtain,Yes
+AEAREP-7433,2025-10-02T12:07:36.230-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",238,CA,AER,2,Moderately Difficult to Obtain,No
+AEAREP-8216,2025-11-02T15:24:19.936-0500,,238,"CA, Revision",AER,2,Moderately Difficult to Obtain,No
+AEAREP-7446,2025-11-06T10:18:03.060-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",239,"CA, Revision",AER,1,Very Easy to Obtain,Yes
+AEAREP-7446,2025-11-06T10:18:03.060-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",239,"CA, Revision",AER,1,Very Difficult to Obtain,Yes
+AEAREP-7451,2025-11-06T10:17:40.181-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",241,CA,AEJ:Macro,1,Very Easy to Obtain,Yes
+AEAREP-7451,2025-11-06T10:17:40.181-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",241,CA,AEJ:Macro,1,Moderately Difficult to Obtain,Yes
+AEAREP-7462,2025-11-06T10:14:38.245-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",249,CA,AER,1,No,No
+AEAREP-7462,2025-11-06T10:14:38.245-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",249,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7461,2025-11-06T10:15:33.873-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",250,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7460,2025-11-06T10:16:20.718-0500,,251,CA,AER,1,No,No
+AEAREP-7456,2025-10-31T15:19:44.349-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",252,CA,AER,1,Very Easy to Obtain,Yes
+AEAREP-7765,2025-11-06T09:04:38.234-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",259,"CA, Revision",JEP,2,Moderately Difficult to Obtain,No
+AEAREP-7492,2025-11-06T10:14:06.698-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",259,CA,JEP,2,Moderately Difficult to Obtain,No
+AEAREP-7503,2025-11-06T10:13:20.750-0500,,292,CA,AER,1,No,No
+AEAREP-7550,2025-12-03T11:08:23.963-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",294,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7549,2025-11-12T11:52:02.438-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",295,CA,AER,2,Moderately Difficult to Obtain,No
+AEAREP-8455,2025-11-12T11:54:48.661-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",295,"CA, Revision",AER,2,Moderately Difficult to Obtain,No
+AEAREP-7574,2025-12-03T13:38:35.713-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",302,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-7812,2025-11-06T08:59:05.047-0500,,312,"CA, Revision",JEL,2,No,No
+AEAREP-7560,2025-11-06T10:08:54.898-0500,,312,CA,JEL,2,No,No
+AEAREP-7559,2025-11-06T10:09:25.562-0500,,313,"CA, Revision",AEJ:Economic Policy,1,No,No
+AEAREP-7586,2025-11-06T10:05:26.514-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",314,CA,AER:Insights,1,Moderately Difficult to Obtain,Yes
+AEAREP-7585,2025-11-06T10:05:59.114-0500,,315,CA,AEJ:Macro,1,No,No
+AEAREP-7576,2025-12-03T13:38:48.484-0500,,320,CA,AEJ:Economic Policy,1,No,No
+AEAREP-7595,2025-11-06T10:04:13.127-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",321,CA,AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-8350,2025-11-24T16:47:39.844-0500,,321,"CA, Revision",AEJ:Macro,2,Moderately Difficult to Obtain,No
+AEAREP-7606,2025-11-17T15:07:03.564-0500,,322,CA,AEJ:Economic Policy,1,No,No
+AEAREP-7605,2025-11-02T21:29:17.838-0500,,323,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7600,2025-11-06T10:03:33.480-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",328,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-7608,2025-11-06T09:58:32.640-0500,,334,CA,AER,2,No,No
+AEAREP-8093,2025-11-19T10:53:10.499-0500,,334,"CA, Revision",AER,2,No,No
+AEAREP-7607,2025-11-06T09:59:52.237-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",335,"CA, Revision",AER,1,Very Easy to Obtain,Yes
+AEAREP-7607,2025-11-06T09:59:52.237-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",335,"CA, Revision",AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-7639,2025-11-06T09:56:03.170-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",338,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-7853,2025-10-03T14:05:10.095-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",339,"CA, Revision",AER,2,Very Easy to Obtain,No
+AEAREP-7853,2025-10-03T14:05:10.095-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",339,"CA, Revision",AER,2,Moderately Easy to Obtain,No
+AEAREP-7638,2025-11-06T09:56:41.244-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",339,CA,AER,2,Very Easy to Obtain,No
+AEAREP-7638,2025-11-06T09:56:41.244-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",339,CA,AER,2,Moderately Easy to Obtain,No
+AEAREP-7649,2025-11-06T09:54:37.423-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",343,CA,AER,1,Very Easy to Obtain,No
+AEAREP-7649,2025-11-06T09:54:37.423-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",343,CA,AER,1,Moderately Easy to Obtain,No
+AEAREP-7649,2025-11-06T09:54:37.423-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",343,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7649,2025-11-06T09:54:37.423-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",343,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7688,2025-11-06T09:47:28.188-0500,,344,CA,AEJ:Economic Policy,2,Very Difficult to Obtain,No
+AEAREP-7889,2025-12-03T13:39:31.831-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",344,"CA, Revision",AEJ:Economic Policy,2,Very Difficult to Obtain,No
+AEAREP-7686,2025-12-05T08:25:39.367-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",345,CA,AEJ:Macro,1,Very Easy to Obtain,No
+AEAREP-7686,2025-12-05T08:25:39.367-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",345,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-7685,2025-11-17T15:09:11.099-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",346,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-7684,2025-11-06T09:53:07.013-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",347,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-8079,2025-11-17T15:02:50.071-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",348,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,No
+AEAREP-7700,2025-11-17T15:04:31.795-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",349,"CA, Revision",AEJ:Micro,1,Moderately Difficult to Obtain,Yes
+AEAREP-7699,2025-11-06T09:43:06.364-0500,,350,CA,JEP,1,No,No
+AEAREP-7697,2025-11-06T09:43:52.672-0500,,351,CA,AER:Insights,1,No,No
+AEAREP-7696,2025-12-03T13:39:02.144-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",352,CA,AEJ:Economic Policy,1,No,No
+AEAREP-7694,2025-11-06T09:46:11.749-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",353,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7706,2025-12-03T11:12:36.238-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",354,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7719,2025-11-06T09:24:59.929-0500,,355,CA,AEJ:Macro,1,No,No
+AEAREP-7715,2025-11-30T14:44:54.412-0500,,358,CA,AEJ:Micro,1,No,No
+AEAREP-7714,2025-12-05T08:19:50.956-0500,,359,CA,AEJ:Macro,1,Very Difficult to Obtain,Yes
+AEAREP-8005,2025-08-12T11:21:41.974-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",360,"CA, Revision",AEJ:Applied Economics,2,Moderately Difficult to Obtain,Yes
+AEAREP-8040,2025-12-01T19:32:56.134-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",360,"CA, Revision",AEJ:Applied Economics,2,Moderately Difficult to Obtain,Yes
+AEAREP-7711,2025-11-06T09:27:49.124-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",361,CA,AEJ:Macro,2,Moderately Easy to Obtain,Yes
+AEAREP-8404,2025-11-08T16:14:22.691-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",361,"CA, Revision",AEJ:Macro,2,Moderately Easy to Obtain,Yes
+AEAREP-7729,2025-08-22T19:46:25.200-0400,,362,CA,JEL,3,No,No
+AEAREP-8076,2025-11-06T09:22:19.255-0500,,362,"CA, Revision",JEL,3,Very Easy to Obtain,No
+AEAREP-7726,2025-11-06T09:24:12.627-0500,,363,CA,AER,1,No,No
+AEAREP-7742,2025-12-03T13:39:44.848-0500,,364,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8211,2025-10-20T17:15:26.660-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",365,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,No
+AEAREP-7747,2025-11-06T09:09:27.674-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",366,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7750,2025-08-11T18:27:22.844-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",367,CA,AER,2,Very Difficult to Obtain,Yes
+AEAREP-8039,2025-10-03T20:34:49.825-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",367,"CA, Revision",AER,2,Very Difficult to Obtain,Yes
+AEAREP-7761,2025-11-20T09:33:59.156-0500,,368,CA,AEJ:Economic Policy,2,Moderately Easy to Obtain,Yes
+AEAREP-7761,2025-11-20T09:33:59.156-0500,,368,CA,AEJ:Economic Policy,2,Moderately Difficult to Obtain,Yes
+AEAREP-8523,2025-11-21T15:55:16.035-0500,,368,"CA, Revision",AEJ:Economic Policy,2,Moderately Easy to Obtain,Yes
+AEAREP-8523,2025-11-21T15:55:16.035-0500,,368,"CA, Revision",AEJ:Economic Policy,2,Moderately Difficult to Obtain,Yes
+AEAREP-7764,2025-11-06T09:05:40.829-0500,,380,CA,JEP,1,Very Easy to Obtain,No
+AEAREP-7796,2025-10-10T22:30:39.203-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",382,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7795,2025-08-29T20:04:45.224-0400,,383,CA,AER,1,No,No
+AEAREP-7788,2025-11-06T09:01:56.484-0500,,384,CA,JEP,1,Moderately Difficult to Obtain,No
+AEAREP-7804,2025-11-06T08:54:46.097-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",385,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-7798,2025-11-17T15:00:14.076-0500,,386,"CA, Revision",AEJ:Applied Economics,1,Very Easy to Obtain,No
+AEAREP-7798,2025-11-17T15:00:14.076-0500,,386,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,No
+AEAREP-7798,2025-11-17T15:00:14.076-0500,,386,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,No
+AEAREP-7810,2025-11-06T08:48:01.539-0500,,387,CA,JEP,1,No,No
+AEAREP-7809,2025-11-06T08:52:34.798-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",388,CA,JEP,1,Very Easy to Obtain,Yes
+AEAREP-7818,2025-11-06T08:57:43.898-0500,,389,CA,AEJ:Macro,1,No,No
+AEAREP-7817,2025-11-06T08:44:24.387-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",390,CA,AER,2,No,No
+AEAREP-8110,2025-11-06T14:19:37.132-0500,,390,"CA, Revision",AER,2,No,No
+AEAREP-7813,2025-11-06T08:59:39.441-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",391,CA,JEP,1,Moderately Difficult to Obtain,No
+AEAREP-7821,2025-11-17T15:07:30.195-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",392,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7836,2025-11-26T22:30:50.208-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",393,CA,AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-7846,2025-10-16T11:25:32.810-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",394,CA,AER,2,No,No
+AEAREP-8330,2025-12-02T21:19:15.792-0500,,394,"CA, Revision",AER,2,No,No
+AEAREP-7845,2025-10-13T21:58:07.092-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",395,"CA, Revision",AEJ:Applied Economics,1,Very Easy to Obtain,Yes
+AEAREP-7845,2025-10-13T21:58:07.092-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",395,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,Yes
+AEAREP-7843,2025-12-03T12:16:26.787-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",396,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-7842,2025-10-29T10:07:48.051-0400,,397,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,No
+AEAREP-7841,2025-10-31T15:29:58.056-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",398,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-8351,2025-12-05T15:00:50.247-0500,,399,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-7882,2025-09-08T15:23:27.710-0400,,403,CA,AER,1,No,No
+AEAREP-7873,2025-09-23T19:58:52.544-0400,,404,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-7884,2025-11-17T15:01:46.940-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",405,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7890,2025-12-01T13:15:36.337-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",406,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7894,2025-12-03T13:39:15.526-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",408,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-7896,2025-09-27T22:10:20.897-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",409,CA,AEJ:Economic Policy,1,Moderately Easy to Obtain,Yes
+AEAREP-7902,2025-10-31T15:21:49.256-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",411,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-7902,2025-10-31T15:21:49.256-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",411,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-8540,2025-11-25T12:50:43.479-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",414,"CA, Revision",AEJ:Applied Economics,1,Moderately Easy to Obtain,Yes
+AEAREP-7926,2025-08-14T14:19:20.540-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",415,CA,AER,2,Very Difficult to Obtain,No
+AEAREP-8046,2025-11-25T18:54:02.942-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",415,"CA, Revision",AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-7925,2025-10-03T21:09:06.223-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",416,CA,AEJ:Macro,1,Moderately Easy to Obtain,No
+AEAREP-7932,2025-12-03T12:01:02.313-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",417,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-7931,2025-12-04T10:24:16.031-0500,,418,CA,AEJ:Economic Policy,1,Very Easy to Obtain,No
+AEAREP-7944,2025-11-19T10:54:06.960-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",419,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-7942,2025-08-01T11:33:32.032-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",420,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7955,2025-11-17T14:59:15.256-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",421,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,Yes
+AEAREP-7958,2025-09-20T13:39:52.310-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",422,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-7957,2025-09-29T18:02:59.639-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",423,CA,AER,2,Moderately Difficult to Obtain,Yes
+AEAREP-8258,2025-11-17T11:17:10.207-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",423,"CA, Revision",AER,2,Moderately Easy to Obtain,No
+AEAREP-7965,2025-11-17T15:06:32.433-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",424,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-7970,2025-12-03T11:11:07.489-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",425,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-7969,2025-11-29T11:11:38.549-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",426,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-7968,2025-12-03T11:09:39.769-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",427,CA,AER,1,Very Easy to Obtain,Yes
+AEAREP-7991,2025-11-15T16:28:36.380-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",428,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-8002,2025-09-29T17:52:13.143-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",429,CA,AEJ:Economic Policy,2,Moderately Difficult to Obtain,No
+AEAREP-8255,2025-11-17T14:57:07.566-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",429,"CA, Revision",AEJ:Economic Policy,2,Moderately Difficult to Obtain,Yes
+AEAREP-8009,2025-10-04T09:15:40.885-0400,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",432,CA,AER:Insights,1,Very Easy to Obtain,No
+AEAREP-8014,2025-11-12T10:59:49.016-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",433,CA,AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-8021,2025-11-19T10:52:47.985-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",434,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8020,2025-11-05T13:50:34.271-0500,,435,CA,JEL,2,No,No
+AEAREP-8416,2025-11-21T18:59:05.606-0500,,435,"CA, Revision",JEL,2,No,No
+AEAREP-8038,2025-12-03T11:41:59.471-0500,,436,CA,AER,1,No,No
+AEAREP-8050,2025-12-03T11:33:38.192-0500,,438,CA,AER,1,No,No
+AEAREP-8048,2025-10-15T22:12:23.968-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",439,CA,AEJ:Economic Policy,1,Very Easy to Obtain,Yes
+AEAREP-8048,2025-10-15T22:12:23.968-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",439,CA,AEJ:Economic Policy,1,Moderately Easy to Obtain,Yes
+AEAREP-8053,2025-10-03T13:01:56.220-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",441,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8053,2025-10-03T13:01:56.220-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",441,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-8056,2025-10-21T23:17:35.684-0400,,442,CA,AEJ:Macro,1,No,No
+AEAREP-8435,2025-11-25T18:35:10.635-0500,,443,"CA, Revision",AEJ:Applied Economics,1,No,No
+AEAREP-8070,2025-11-20T11:47:31.007-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",444,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8078,2025-11-12T11:00:12.159-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",446,CA,AER:Insights,1,Moderately Difficult to Obtain,No
+AEAREP-8094,2025-11-18T08:23:24.648-0500,,447,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8106,2025-12-04T08:30:22.114-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",448,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8102,2025-12-01T15:28:04.498-0500,,449,CA,AEJ:Micro,1,No,No
+AEAREP-8114,2025-11-19T10:54:27.146-0500,,451,CA,AER,1,No,No
+AEAREP-8109,2025-11-17T17:08:44.861-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",452,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,Yes
+AEAREP-8108,2025-10-27T12:45:42.680-0400,"[<JIRA CustomFieldOption: value='No', id='10094'>]",453,CA,AER:Insights,2,Very Difficult to Obtain,No
+AEAREP-8385,2025-11-03T13:56:53.127-0500,,453,"CA, Revision",AER:Insights,2,Moderately Difficult to Obtain,No
+AEAREP-8119,2025-11-10T11:41:01.512-0500,,454,CA,AEJ:Micro,1,Very Difficult to Obtain,No
+AEAREP-8118,2025-11-17T17:46:20.180-0500,,455,CA,AER,1,Very Easy to Obtain,Yes
+AEAREP-8480,2025-11-26T09:27:34.026-0500,,457,"CA, Revision",AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-8126,2025-10-31T13:17:50.959-0400,,458,CA,AER,1,No,No
+AEAREP-8151,2025-11-17T15:07:16.838-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",460,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8161,2025-10-23T15:49:35.594-0400,,461,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8160,2025-11-28T20:39:17.836-0500,,462,CA,AER:Insights,1,Moderately Difficult to Obtain,No
+AEAREP-8160,2025-11-28T20:39:17.836-0500,,462,CA,AER:Insights,1,Very Difficult to Obtain,No
+AEAREP-8159,2025-11-17T15:06:45.371-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",463,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-8157,2025-11-04T10:06:46.297-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",464,CA,JEP,2,Moderately Difficult to Obtain,No
+AEAREP-8168,2025-10-21T23:12:33.429-0400,,465,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-8167,2025-10-28T16:40:19.488-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",466,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8195,2025-11-19T12:44:49.329-0500,,468,CA,AEJ:Macro,2,No,No
+AEAREP-8522,2025-11-19T18:25:09.603-0500,,468,"CA, Revision",AEJ:Macro,2,No,No
+AEAREP-8212,2025-11-17T15:09:54.394-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",470,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8217,2025-11-03T09:12:59.292-0500,,472,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-8219,2025-11-19T21:51:02.519-0500,,473,CA,AER,1,No,No
+AEAREP-8218,2025-10-22T10:37:39.780-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",474,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8218,2025-10-22T10:37:39.780-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",474,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-8224,2025-10-14T19:25:32.463-0400,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",475,CA,AER:Insights,1,Moderately Difficult to Obtain,Yes
+AEAREP-8226,2025-11-04T14:13:40.540-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",476,CA,AER:Insights,2,Very Easy to Obtain,Yes
+AEAREP-8226,2025-11-04T14:13:40.540-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",476,CA,AER:Insights,2,Moderately Difficult to Obtain,Yes
+AEAREP-8226,2025-11-04T14:13:40.540-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",476,CA,AER:Insights,2,Very Difficult to Obtain,Yes
+AEAREP-8420,2025-12-04T21:07:05.155-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",476,"CA, Revision",AER:Insights,2,Very Easy to Obtain,Yes
+AEAREP-8420,2025-12-04T21:07:05.155-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",476,"CA, Revision",AER:Insights,2,Moderately Difficult to Obtain,Yes
+AEAREP-8420,2025-12-04T21:07:05.155-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",476,"CA, Revision",AER:Insights,2,Very Difficult to Obtain,Yes
+AEAREP-8225,2025-12-04T07:50:10.681-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",477,CA,AEJ:Economic Policy,1,Moderately Easy to Obtain,Yes
+AEAREP-8239,2025-11-13T22:34:46.425-0500,,478,CA,AER,1,No,No
+AEAREP-8245,2025-11-04T10:06:17.497-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",479,CA,JEP,2,Moderately Easy to Obtain,Yes
+AEAREP-8312,2025-11-07T15:19:46.868-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",479,"CA, Revision",JEP,2,Moderately Easy to Obtain,Yes
+AEAREP-8260,2025-11-28T19:30:31.608-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",480,"CA, Revision",AEJ:Applied Economics,1,Very Easy to Obtain,No
+AEAREP-8260,2025-11-28T19:30:31.608-0500,"[<JIRA CustomFieldOption: value='Requested from third party', id='10093'>]",480,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-8259,2025-11-13T20:26:55.678-0500,,481,CA,AER,1,Moderately Difficult to Obtain,No
+AEAREP-8257,2025-12-01T18:50:06.815-0500,,482,CA,AER,1,No,No
+AEAREP-8256,2025-09-29T17:57:38.471-0400,,483,CA,AEJ:Micro,1,No,No
+AEAREP-8252,2025-10-28T11:35:56.504-0400,,484,CA,AER:Insights,1,No,No
+AEAREP-8251,2025-11-17T15:04:54.279-0500,,485,CA,AEJ:Micro,1,No,No
+AEAREP-8250,2025-11-20T16:58:20.446-0500,,486,"CA, Revision",AEJ:Applied Economics,1,Moderately Difficult to Obtain,No
+AEAREP-8249,2025-11-20T19:44:57.157-0500,,487,CA,AER,1,No,No
+AEAREP-8273,2025-11-25T18:39:02.928-0500,,488,CA,AEJ:Micro,1,Moderately Difficult to Obtain,No
+AEAREP-8288,2025-11-28T19:51:21.442-0500,,491,CA,AER,1,No,No
+AEAREP-8287,2025-12-01T14:09:12.805-0500,,492,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8286,2025-12-01T18:35:31.670-0500,,493,CA,AER,1,No,No
+AEAREP-8304,2025-12-04T08:47:48.523-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",494,CA,AEJ:Macro,1,Moderately Difficult to Obtain,Yes
+AEAREP-8302,2025-11-24T13:14:33.493-0500,,495,CA,AEJ:Economic Policy,1,Moderately Easy to Obtain,No
+AEAREP-8301,2025-11-19T16:01:46.834-0500,,496,CA,AEJ:Micro,1,No,No
+AEAREP-8310,2025-11-25T18:43:53.306-0500,,497,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8308,2025-11-28T12:24:32.861-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",498,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8314,2025-12-01T13:57:23.569-0500,,499,CA,JEL,1,No,No
+AEAREP-8313,2025-12-05T15:27:28.113-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",500,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-8311,2025-11-27T12:40:08.567-0500,,501,CA,AEJ:Micro,1,Very Easy to Obtain,No
+AEAREP-8311,2025-11-27T12:40:08.567-0500,,501,CA,AEJ:Micro,1,Moderately Easy to Obtain,No
+AEAREP-8322,2025-11-13T15:22:58.470-0500,,502,CA,AEJ:Micro,1,No,No
+AEAREP-8321,2025-11-24T14:07:50.772-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",503,CA,AEJ:Macro,1,Very Easy to Obtain,Yes
+AEAREP-8331,2025-12-03T10:10:43.443-0500,,504,CA,AEJ:Macro,1,Moderately Difficult to Obtain,No
+AEAREP-8328,2025-12-02T08:12:09.032-0500,,506,CA,AEJ:Macro,1,No,No
+AEAREP-8363,2025-11-25T13:57:12.950-0500,,508,CA,JEL,1,No,No
+AEAREP-8361,2025-12-05T09:46:29.892-0500,,509,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8366,2025-11-17T17:50:08.063-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",511,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8374,2025-12-01T18:44:45.827-0500,,512,CA,AER,1,No,No
+AEAREP-8373,2025-11-13T17:47:13.232-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",513,CA,AEJ:Micro,1,Moderately Difficult to Obtain,Yes
+AEAREP-8372,2025-11-21T08:37:40.825-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",514,CA,AER,1,Moderately Easy to Obtain,Yes
+AEAREP-8372,2025-11-21T08:37:40.825-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",514,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8372,2025-11-21T08:37:40.825-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",514,CA,AER,1,Very Difficult to Obtain,Yes
+AEAREP-8387,2025-11-24T16:33:30.925-0500,,515,CA,AER,1,No,No
+AEAREP-8386,2025-12-01T10:42:25.503-0500,,516,CA,AEJ:Micro,1,No,No
+AEAREP-8399,2025-12-01T09:25:28.779-0500,,517,CA,AER,1,No,No
+AEAREP-8398,2025-12-05T21:23:45.822-0500,,518,CA,AER,1,No,No
+AEAREP-8397,2025-12-05T08:29:11.598-0500,"[<JIRA CustomFieldOption: value='No', id='10094'>]",519,CA,AER,1,Very Difficult to Obtain,No
+AEAREP-8405,2025-12-04T22:35:03.048-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",520,CA,AEJ:Macro,1,Very Easy to Obtain,Yes
+AEAREP-8413,2025-11-26T20:08:30.510-0500,,522,CA,AEJ:Economic Policy,1,Very Easy to Obtain,No
+AEAREP-8413,2025-11-26T20:08:30.510-0500,,522,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8412,2025-12-04T10:25:30.411-0500,,523,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-8411,2025-12-01T12:05:31.664-0500,,524,CA,AEJ:Micro,1,No,No
+AEAREP-8410,2025-11-19T18:21:11.928-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",525,CA,AEJ:Economic Policy,1,Moderately Easy to Obtain,Yes
+AEAREP-8419,2025-12-03T11:56:04.275-0500,,526,CA,AEJ:Macro,1,No,No
+AEAREP-8418,2025-12-07T14:31:31.815-0500,,527,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8425,2025-12-03T17:19:31.287-0500,,528,CA,AEJ:Economic Policy,1,Moderately Difficult to Obtain,No
+AEAREP-8436,2025-12-03T22:00:55.824-0500,,529,CA,AEJ:Macro,1,Very Easy to Obtain,Yes
+AEAREP-8434,2025-12-06T23:08:51.141-0500,,530,CA,AER:Insights,1,No,No
+AEAREP-8445,2025-11-25T13:56:43.206-0500,,531,CA,JEP,1,No,No
+AEAREP-8466,2025-11-28T11:49:21.999-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",532,CA,JEP,1,Very Easy to Obtain,Yes
+AEAREP-8466,2025-11-28T11:49:21.999-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",532,CA,JEP,1,Moderately Easy to Obtain,Yes
+AEAREP-8448,2025-11-24T08:03:33.553-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",533,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8447,2025-11-24T10:37:15.113-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",534,CA,JEL,1,Moderately Difficult to Obtain,Yes
+AEAREP-8446,2025-12-01T14:56:52.126-0500,,535,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,No
+AEAREP-8470,2025-12-01T17:52:32.456-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",536,CA,AER,1,Very Easy to Obtain,Yes
+AEAREP-8493,2025-11-24T17:09:05.407-0500,,537,CA,AEJ:Economic Policy,1,Very Difficult to Obtain,Yes
+AEAREP-8515,2025-12-03T11:52:13.443-0500,,538,CA,AEJ:Micro,1,Moderately Difficult to Obtain,No
+AEAREP-8514,2025-12-03T16:23:12.850-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",539,CA,AEJ:Economic Policy,1,Moderately Easy to Obtain,Yes
+AEAREP-8513,2025-11-29T09:41:21.854-0500,,540,CA,AEJ:Macro,1,No,No
+AEAREP-8503,2025-12-04T08:59:11.675-0500,,541,CA,JEP,1,Very Easy to Obtain,No
+AEAREP-8503,2025-12-04T08:59:11.675-0500,,541,CA,JEP,1,Very Difficult to Obtain,No
+AEAREP-8529,2025-11-20T12:03:54.035-0500,,542,CA,AEJ:Macro,1,No,No
+AEAREP-8527,2025-11-24T07:55:51.277-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",543,CA,AEJ:Micro,1,Moderately Difficult to Obtain,Yes
+AEAREP-8530,2025-12-05T10:36:12.157-0500,,545,CA,JEP,1,No,No
+AEAREP-8537,2025-12-01T09:14:11.584-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",546,"CA, Revision",AEJ:Applied Economics,1,Very Difficult to Obtain,Yes
+AEAREP-8536,2025-12-01T17:15:33.592-0500,,547,CA,AEJ:Economic Policy,1,No,No
+AEAREP-8535,2025-11-24T13:52:31.215-0500,,548,CA,AEJ:Macro,1,No,No
+AEAREP-8534,2025-11-24T13:50:51.782-0500,,549,CA,AEJ:Macro,1,Moderately Easy to Obtain,No
+AEAREP-8534,2025-11-24T13:50:51.782-0500,,549,CA,AEJ:Macro,1,Very Difficult to Obtain,No
+AEAREP-8542,2025-11-25T12:40:40.981-0500,,551,CA,AER,1,No,No
+AEAREP-8541,2025-12-04T11:29:08.705-0500,"[<JIRA CustomFieldOption: value='Provided by authors', id='10092'>]",552,CA,AER,1,Moderately Difficult to Obtain,Yes
+AEAREP-8552,2025-11-28T08:07:59.432-0500,,553,CA,AER,1,Very Difficult to Obtain,Yes

@@ -1,0 +1,422 @@
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # Tabulate statistics and make graphs for the AEA data editor report
+> # Harry Son
+> # 12/11/2020
+> 
+> # Inputs
+> #   - file.path(jiraanon,"jira.anon.RDS") 
+> # Outputs
+> 
+> 
+> ### Load libraries 
+> ### Requirements: have library *here*
+> source(here::here("global-libraries.R"),echo=TRUE)
+
+> ppm.date <- "2023-11-01"
+
+> options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/focal/", 
++     ppm.date)))
+
+> global.libraries <- c("dplyr", "here", "tidyr", "tibble", 
++     "stringr", "readr", "openxlsx", "splitstackshape", "digest", 
++     "remotes", "rea ..." ... [TRUNCATED] 
+
+> pkgTest <- function(x) {
++     if (!require(x, character.only = TRUE)) {
++         install.packages(x, dep = TRUE)
++         if (!require(x, charact .... [TRUNCATED] 
+
+> pkgTest.github <- function(libname, source, pkgname = libname) {
++     if (!require(libname, character.only = TRUE)) {
++         if (pkgname == "")  .... [TRUNCATED] 
+
+> results <- sapply(as.list(global.libraries), pkgTest)
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: here
+here() starts at /home/rstudio/project
+Loading required package: tidyr
+Loading required package: tibble
+Loading required package: stringr
+Loading required package: readr
+Loading required package: openxlsx
+Loading required package: splitstackshape
+Loading required package: digest
+Loading required package: remotes
+Loading required package: readxl
+Loading required package: writexl
+Loading required package: ggplot2
+Loading required package: ggthemes
+Loading required package: janitor
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Loading required package: dataverse
+Loading required package: xtable
+Loading required package: viridis
+Loading required package: viridisLite
+Loading required package: kableExtra
+
+Attaching package: ‘kableExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+Loading required package: knitr
+Loading required package: tidylog
+
+Attaching package: ‘tidylog’
+
+The following objects are masked from ‘package:tidyr’:
+
+    drop_na, fill, gather, pivot_longer, pivot_wider, replace_na,
+    spread, uncount
+
+The following objects are masked from ‘package:dplyr’:
+
+    add_count, add_tally, anti_join, count, distinct, distinct_all,
+    distinct_at, distinct_if, filter, filter_all, filter_at, filter_if,
+    full_join, group_by, group_by_all, group_by_at, group_by_if,
+    inner_join, left_join, mutate, mutate_all, mutate_at, mutate_if,
+    relocate, rename, rename_all, rename_at, rename_if, rename_with,
+    right_join, sample_frac, sample_n, select, select_all, select_at,
+    select_if, semi_join, slice, slice_head, slice_max, slice_min,
+    slice_sample, slice_tail, summarise, summarise_all, summarise_at,
+    summarise_if, summarize, summarize_all, summarize_at, summarize_if,
+    tally, top_frac, top_n, transmute, transmute_all, transmute_at,
+    transmute_if, ungroup
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+> pkgTest.github("stargazer", "markwestcott34", "stargazer-booktabs")
+Loading required package: stargazer
+
+Please cite as: 
+
+ Hlavac, Marek (2015). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2. http://CRAN.R-project.org/package=stargazer 
+
+[1] "OK"
+> source(here::here("programs","config.R"),echo=TRUE)
+
+> process_anon <- TRUE
+
+> download_anon <- TRUE
+
+> report.year <- 2025
+
+> firstday <- paste0(as.character(report.year - 1), 
++     "-12-01")
+
+> lastday <- paste0(as.character(report.year), "-11-30")
+
+> basepath <- here::here()
+
+> setwd(basepath)
+
+> jira.anon.partial <- file.path("data", "jira", "anon")
+
+> jiraconf <- file.path(basepath, "data", "confidential", 
++     "jira")
+
+> jiraanon <- file.path(basepath, jira.anon.partial)
+
+> manual <- file.path(basepath, "data", "manual")
+
+> jira.raw <- file.path("data", "jira", "raw")
+
+> icpsrconf <- file.path(basepath, "data", "confidential", 
++     "icpsr")
+
+> icpsrbase <- file.path(basepath, "data", "icpsr")
+
+> icpsr.utilization.date <- "2025-12-08"
+
+> icpsr.utilization.file <- paste0("utilizationReport-", 
++     icpsr.utilization.date, ".csv")
+
+> icpsr.custom.xlsx <- "AEA_Report_20251205_edited.csv"
+
+> zenodobase <- file.path(basepath, "data", "zenodo")
+
+> jira.anon.name <- file.path(jiraanon, "jira.anon.RDS")
+
+> jira.anon.commit <- "91a673fe3d07fe6970588dfd62e3c85aff8774ec"
+
+> jira.anon.sha256 <- "c4e35e6b62581d6652109bb0c1134861e7715d721b22e254dc7fa69d8191779f"
+
+> jira.anon.urlbase <- paste0("https://raw.githubusercontent.com/AEADataEditor/processing-jira-process-data/", 
++     jira.anon.commit)
+
+> jira.anon.url <- file.path(jira.anon.urlbase, "data", 
++     "anon", "jira.anon.RDS")
+
+> jira.members.url <- file.path(jira.anon.urlbase, "data", 
++     "replicationlab_members.txt")
+
+> jira.members.name <- file.path(jiraanon, "replicationlab_members.txt")
+
+> scholarone <- file.path(basepath, "data", "scholarone")
+
+> scholarone.file <- "dataEditorReport_20241111-20251110.xlsx"
+
+> scholarone.name <- file.path(scholarone, scholarone.file)
+
+> scholarone.prev <- "dataEditorReport_20231111-20241110.xlsx"
+
+> scholarone.skip <- 31
+
+> scholarone.skip2 <- 42
+
+> scholarone.pskip <- 33
+
+> images <- file.path(basepath, "images")
+
+> tables <- file.path(basepath, "tables")
+
+> programs <- file.path(basepath, "programs")
+
+> temp <- file.path(basepath, "data", "temp")
+
+> latexnums.Rda <- file.path(tables, "latexnums.Rda")
+
+> latexnums.tex <- file.path(tables, "latexnums.tex")
+
+> for (dir in list(images, tables, programs, temp)) {
++     if (file.exists(dir)) {
++     }
++     else {
++         dir.create(file.path(dir))
++     }
+ .... [TRUNCATED] 
+
+> set.seed(20201201)
+
+> pkgTest("tibble")
+[1] "OK"
+
+> if (file.exists(latexnums.Rda)) {
++     print(paste0("File for export to LaTeX found: ", latexnums.Rda))
++ } else {
++     latexnums <- tibble(field  .... [TRUNCATED] 
+[1] "File for export to LaTeX found: /home/rstudio/project/tables/latexnums.Rda"
+
+> update_latexnums <- function(field, value) {
++     latexnums <- readRDS(latexnums.Rda)
++     if (any(latexnums$field == field)) {
++         message( .... [TRUNCATED] 
+
+> .Last <- function() {
++     sessionInfo()
++ }
+> library(stargazer)
+> 
+> # read back in
+> 
+> utilizationReport <- readRDS(file=file.path(icpsrbase,"anonUtilizationReport.Rds"))
+> 
+> icpsr.stats.mb <- readRDS(file=file.path(icpsrbase,"icpsr.stats.mb.Rds"))
+> icpsr.stats.gb <- readRDS(file=file.path(icpsrbase,"icpsr.stats.gb.Rds"))
+> 
+> webstats <- utilizationReport %>%
++   summarize(totalDownloads = sum(Downloads),
++             totalViews     = sum(Views),
++             totalPublished = sum(is_published),
++             maxDownloads   = max(Downloads),
++             medianDownloads= median(Downloads))
+summarize: now one row and 5 columns, ungrouped
+> 
+> update_latexnums("icpsrutilization",icpsr.utilization.date)
+Adding new row for field icpsrutilization
+> update_latexnums("icpsrtotalDownloads",webstats$totalDownloads)
+Adding new row for field icpsrtotalDownloads
+> update_latexnums("icpsrtotalDownloadsHT",round(webstats$totalDownloads/100000,0))
+Adding new row for field icpsrtotalDownloadsHT
+> update_latexnums("icpsrmaxDownloads",webstats$maxDownloads)
+Adding new row for field icpsrmaxDownloads
+> update_latexnums("icpsrmedianDownloads",webstats$medianDownloads)
+Adding new row for field icpsrmedianDownloads
+> update_latexnums("icpsrtotalViews",webstats$totalViews)
+Adding new row for field icpsrtotalViews
+> update_latexnums("icpsrtotalViewsM",round(webstats$totalViews/1000000,1))
+Adding new row for field icpsrtotalViewsM
+> update_latexnums("icpsrtotalPublished",webstats$totalPublished)
+Adding new row for field icpsrtotalPublished
+> 
+> 
+> 
+> # output table
+> 
+> webstats %>% 
++   bind_cols(icpsr.stats.gb) %>%
++   mutate(Repository = "ICPSR",
++          Published   = prettyNum(totalPublished,big.mark = ","),
++          `Downloads` = prettyNum(totalDownloads,big.mark = ","),
++          `Views`     = prettyNum(totalViews,big.mark = ","),
++          Uploads     = prettyNum(n,big.mark = ","),
++          `Files`     = prettyNum(files,big.mark = ","),
++          `Size (GB)` = prettyNum(sum,big.mark = ",")) %>%
++   select(Repository,Published,Downloads,Views,Uploads,Files,`Size (GB)`)->
++   icpsr.stats.table
+mutate: new variable 'Repository' (character) with one unique value and 0% NA
+        new variable 'Published' (character) with one unique value and 0% NA
+        new variable 'Downloads' (character) with one unique value and 0% NA
+        new variable 'Views' (character) with one unique value and 0% NA
+        new variable 'Uploads' (character) with one unique value and 0% NA
+        new variable 'Files' (character) with one unique value and 0% NA
+        new variable 'Size (GB)' (character) with one unique value and 0% NA
+select: dropped 11 variables (totalDownloads, totalViews, totalPublished, maxDownloads, medianDownloads, …)
+> 
+> 
+> # Do the same for Zenodo, though we only output latexnums
+> # The data were generated by hand (this year), running
+> # python3 zenodo_pull.py
+> # Requirements: requests
+> # dbl  (8): id, revision, downloads, views, unique_downloads, unique_views, 
+> #
+> # dbl (2): sumsize, filecount
+> # The number of uploads was hand-counted: 4
+> 
+> 
+> utilizationReport.z <- read_csv(file.path(zenodobase,paste0("zenodo_data_",report.year,".csv"))) %>%
++   mutate(date_created = as.Date(substr(created, 1,10), "%Y-%m-%d")) 
+Rows: 29 Columns: 9
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): doi, title
+dbl  (6): id, revision, downloads, views, unique_downloads, unique_views
+dttm (1): created
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+mutate: new variable 'date_created' (Date) with 19 unique values and 0% NA
+> 
+> sumstats.z          <- read_csv(file.path(zenodobase,paste0("zenodo_data_",report.year,"_summary.csv"))) %>%
++   rename(files = filecount, sum=sumsize) %>%
++   mutate(sum = sum/1024/1024/1024)
+Rows: 1 Columns: 3
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+dbl (3): sumsize, filecount, depositcount
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+rename: renamed 2 variables (sum, files)
+mutate: changed one value (100%) of 'sum' (0 new NA)
+> 
+> webstats <- utilizationReport.z %>%
++   mutate(this.year = ( date_created >= firstday & date_created <= lastday)) %>%
++   summarize(totalDownloads = sum(unique_downloads),
++             totalViews     = sum(unique_views),
++             totalPublished = n(),
++             maxDownloads   = max(unique_downloads),
++             medianDownloads= median(unique_downloads),
++             uploads        = sum(this.year)) %>%
++   bind_cols(sumstats.z)
+mutate: new variable 'this.year' (logical) with 2 unique values and 0% NA
+summarize: now one row and 6 columns, ungrouped
+> 
+> update_latexnums("zenodototalDownloads",webstats$totalDownloads)
+Adding new row for field zenodototalDownloads
+> update_latexnums("zenodototalDownloadsHT",round(webstats$totalDownloads/100000,0))
+Adding new row for field zenodototalDownloadsHT
+> update_latexnums("zenodomaxDownloads",webstats$maxDownloads)
+Adding new row for field zenodomaxDownloads
+> update_latexnums("zenodomedianDownloads",webstats$medianDownloads)
+Adding new row for field zenodomedianDownloads
+> update_latexnums("zenodototalViews",webstats$totalViews)
+Adding new row for field zenodototalViews
+> update_latexnums("zenodototalViewsM",round(webstats$totalViews/1000000,1))
+Adding new row for field zenodototalViewsM
+> update_latexnums("zenodototalPublished",webstats$totalPublished)
+Adding new row for field zenodototalPublished
+> update_latexnums("zenodototalSizeGB",round(webstats$sum,0))
+Adding new row for field zenodototalSizeGB
+> update_latexnums("zenodototalSizeTB",round(webstats$sum/1024,1))
+Adding new row for field zenodototalSizeTB
+> update_latexnums("zenodototalFiles",webstats$files)
+Adding new row for field zenodototalFiles
+> 
+> webstats %>% 
++   mutate(Repository = "Zenodo",
++           Published   = prettyNum(totalPublished,big.mark = ","),
++          `Downloads` = prettyNum(totalDownloads,big.mark = ","),
++          `Views`     = prettyNum(totalViews,big.mark = ","),
++          Uploads     = prettyNum(uploads,big.mark = ","),
++          `Files`     = prettyNum(files,big.mark = ","),
++          `Size (GB)` = prettyNum(round(sum,2),big.mark = ",")) %>%
++   select(Repository,Published,Downloads,Views,Uploads,Files,`Size (GB)`)->
++   zenodo.stats.table
+mutate: new variable 'Repository' (character) with one unique value and 0% NA
+        new variable 'Published' (character) with one unique value and 0% NA
+        new variable 'Downloads' (character) with one unique value and 0% NA
+        new variable 'Views' (character) with one unique value and 0% NA
+        new variable 'Uploads' (character) with one unique value and 0% NA
+        new variable 'Files' (character) with one unique value and 0% NA
+        new variable 'Size (GB)' (character) with one unique value and 0% NA
+select: dropped 9 variables (totalDownloads, totalViews, totalPublished, maxDownloads, medianDownloads, …)
+> 
+> # combine
+> 
+> stats.table <- bind_rows(icpsr.stats.table, zenodo.stats.table)
+> 
+> stargazer(stats.table,style = "aer",
++           summary = FALSE,
++           out = file.path(tables,"n_webstats.tex"),
++           out.header = FALSE,
++           float = FALSE,
++           rownames = FALSE,
++           digit.separator = ",",
++           digit.separate = 3
++ )
+
+% Table created by stargazer v.5.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Dec 09, 2025 - 04:12:29 AM
+\begin{tabular}{@{\extracolsep{5pt}} ccccccc} 
+\toprule 
+Repository & Published & Downloads & Views & Uploads & Files & Size (GB) \\ 
+\midrule ICPSR & 5,748 & 662,209 & 7,799,152 & 311 & 44,850 & 922.88 \\ 
+Zenodo & 29 & 285,508 & 7,109 & 5 & 6,427 & 813.07 \\ 
+\bottomrule 
+\end{tabular} 
+> #
+> 
+> proc.time()
+   user  system elapsed 
+  1.662   0.746   1.332 

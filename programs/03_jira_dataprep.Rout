@@ -1,0 +1,740 @@
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # Tabulate statistics and make graphs for the AEA data editor report
+> # Originally written by Harry Son
+> # Updated by Lars Vilhuber
+> # 2021-12-30
+> # Updated by Takshil Sachdev
+> # 2025-01-26
+> 
+> # Inputs
+> # - file.path(jiraanon,"jira.anon.RDS") 
+> # Outputs
+> # - file.path(temp,"jira.pyear.RDS"))
+> # - file.path(temp,"jira.submitted.RDS"))
+> # - file.path(temp,"jira.breakout.RDS"))
+> # - file.path(jiraanon,"jira.others.RDS"))
+> # - file.path(temp,"jira.nc.RDS"))
+> # - file.path(temp,"jira.up.RDS"))
+> # - file.path(temp,"jira.nda.RDS"))
+> # - file.path(temp,"jira.ext.RDS"))
+> # - file.path(jiraanon,"jira.others.xlsx") [if not already present]
+> 
+> ### Load libraries 
+> ### Requirements: have library *here*
+> source(here::here("global-libraries.R"),echo=TRUE)
+
+> ppm.date <- "2023-11-01"
+
+> options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/focal/", 
++     ppm.date)))
+
+> global.libraries <- c("dplyr", "here", "tidyr", "tibble", 
++     "stringr", "readr", "openxlsx", "splitstackshape", "digest", 
++     "remotes", "rea ..." ... [TRUNCATED] 
+
+> pkgTest <- function(x) {
++     if (!require(x, character.only = TRUE)) {
++         install.packages(x, dep = TRUE)
++         if (!require(x, charact .... [TRUNCATED] 
+
+> pkgTest.github <- function(libname, source, pkgname = libname) {
++     if (!require(libname, character.only = TRUE)) {
++         if (pkgname == "")  .... [TRUNCATED] 
+
+> results <- sapply(as.list(global.libraries), pkgTest)
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: here
+here() starts at /home/rstudio/project
+Loading required package: tidyr
+Loading required package: tibble
+Loading required package: stringr
+Loading required package: readr
+Loading required package: openxlsx
+Loading required package: splitstackshape
+Loading required package: digest
+Loading required package: remotes
+Loading required package: readxl
+Loading required package: writexl
+Loading required package: ggplot2
+Loading required package: ggthemes
+Loading required package: janitor
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Loading required package: dataverse
+Loading required package: xtable
+Loading required package: viridis
+Loading required package: viridisLite
+Loading required package: kableExtra
+
+Attaching package: ‘kableExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+Loading required package: knitr
+Loading required package: tidylog
+
+Attaching package: ‘tidylog’
+
+The following objects are masked from ‘package:tidyr’:
+
+    drop_na, fill, gather, pivot_longer, pivot_wider, replace_na,
+    spread, uncount
+
+The following objects are masked from ‘package:dplyr’:
+
+    add_count, add_tally, anti_join, count, distinct, distinct_all,
+    distinct_at, distinct_if, filter, filter_all, filter_at, filter_if,
+    full_join, group_by, group_by_all, group_by_at, group_by_if,
+    inner_join, left_join, mutate, mutate_all, mutate_at, mutate_if,
+    relocate, rename, rename_all, rename_at, rename_if, rename_with,
+    right_join, sample_frac, sample_n, select, select_all, select_at,
+    select_if, semi_join, slice, slice_head, slice_max, slice_min,
+    slice_sample, slice_tail, summarise, summarise_all, summarise_at,
+    summarise_if, summarize, summarize_all, summarize_at, summarize_if,
+    tally, top_frac, top_n, transmute, transmute_all, transmute_at,
+    transmute_if, ungroup
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+> pkgTest.github("stargazer", "markwestcott34", "stargazer-booktabs")
+Loading required package: stargazer
+
+Please cite as: 
+
+ Hlavac, Marek (2015). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2. http://CRAN.R-project.org/package=stargazer 
+
+[1] "OK"
+> source(here::here("programs","config.R"),echo=TRUE)
+
+> process_anon <- TRUE
+
+> download_anon <- TRUE
+
+> report.year <- 2025
+
+> firstday <- paste0(as.character(report.year - 1), 
++     "-12-01")
+
+> lastday <- paste0(as.character(report.year), "-11-30")
+
+> basepath <- here::here()
+
+> setwd(basepath)
+
+> jira.anon.partial <- file.path("data", "jira", "anon")
+
+> jiraconf <- file.path(basepath, "data", "confidential", 
++     "jira")
+
+> jiraanon <- file.path(basepath, jira.anon.partial)
+
+> manual <- file.path(basepath, "data", "manual")
+
+> jira.raw <- file.path("data", "jira", "raw")
+
+> icpsrconf <- file.path(basepath, "data", "confidential", 
++     "icpsr")
+
+> icpsrbase <- file.path(basepath, "data", "icpsr")
+
+> icpsr.utilization.date <- "2025-12-08"
+
+> icpsr.utilization.file <- paste0("utilizationReport-", 
++     icpsr.utilization.date, ".csv")
+
+> icpsr.custom.xlsx <- "AEA_Report_20251205_edited.csv"
+
+> zenodobase <- file.path(basepath, "data", "zenodo")
+
+> jira.anon.name <- file.path(jiraanon, "jira.anon.RDS")
+
+> jira.anon.commit <- "91a673fe3d07fe6970588dfd62e3c85aff8774ec"
+
+> jira.anon.sha256 <- "c4e35e6b62581d6652109bb0c1134861e7715d721b22e254dc7fa69d8191779f"
+
+> jira.anon.urlbase <- paste0("https://raw.githubusercontent.com/AEADataEditor/processing-jira-process-data/", 
++     jira.anon.commit)
+
+> jira.anon.url <- file.path(jira.anon.urlbase, "data", 
++     "anon", "jira.anon.RDS")
+
+> jira.members.url <- file.path(jira.anon.urlbase, "data", 
++     "replicationlab_members.txt")
+
+> jira.members.name <- file.path(jiraanon, "replicationlab_members.txt")
+
+> scholarone <- file.path(basepath, "data", "scholarone")
+
+> scholarone.file <- "dataEditorReport_20241111-20251110.xlsx"
+
+> scholarone.name <- file.path(scholarone, scholarone.file)
+
+> scholarone.prev <- "dataEditorReport_20231111-20241110.xlsx"
+
+> scholarone.skip <- 31
+
+> scholarone.skip2 <- 42
+
+> scholarone.pskip <- 33
+
+> images <- file.path(basepath, "images")
+
+> tables <- file.path(basepath, "tables")
+
+> programs <- file.path(basepath, "programs")
+
+> temp <- file.path(basepath, "data", "temp")
+
+> latexnums.Rda <- file.path(tables, "latexnums.Rda")
+
+> latexnums.tex <- file.path(tables, "latexnums.tex")
+
+> for (dir in list(images, tables, programs, temp)) {
++     if (file.exists(dir)) {
++     }
++     else {
++         dir.create(file.path(dir))
++     }
+ .... [TRUNCATED] 
+
+> set.seed(20201201)
+
+> pkgTest("tibble")
+[1] "OK"
+
+> if (file.exists(latexnums.Rda)) {
++     print(paste0("File for export to LaTeX found: ", latexnums.Rda))
++ } else {
++     latexnums <- tibble(field  .... [TRUNCATED] 
+[1] "File for export to LaTeX found: /home/rstudio/project/tables/latexnums.Rda"
+
+> update_latexnums <- function(field, value) {
++     latexnums <- readRDS(latexnums.Rda)
++     if (any(latexnums$field == field)) {
++         message( .... [TRUNCATED] 
+
+> .Last <- function() {
++     sessionInfo()
++ }
+> 
+> 
+> # Read in data extracted from Jira, anonymized
+> if ( file.exists(jira.anon.name) ) {
++   message("File exists, proceeding.")
++ } else {
++   message("Attempting to download file")
++   try(download.file(jira.anon.url,jira.anon.name,mode="wb"))
++   if ( file.exists(jira.anon.name) ) {
++     message("Download successful, proceeding.")
++   } else {
++     stop("Download failed. Please investigate")
++   }
++ }
+File exists, proceeding.
+> 
+> jira.anon.raw <- readRDS(jira.anon.name)
+> 
+> #
+> # This should be compared to the published version.
+> # Note that this is an in-memory computation of the checksum, not of the 
+> # RDS file!
+> #
+> jira.test.chksum <- digest(jira.anon.raw,algo="sha256")
+> message(paste0("Checksum for main file: ",jira.test.chksum))
+Checksum for main file: c4e35e6b62581d6652109bb0c1134861e7715d721b22e254dc7fa69d8191779f
+> if ( jira.test.chksum == jira.anon.sha256) {
++   message("SHA256 checksum verified.")
++ } else {
++   stop("SHA256 fails, please verify that you are using the same file. Update config.R if necessary.")
++ }
+SHA256 checksum verified.
+> 
+> jira.anon <- jira.anon.raw %>%
++   filter(date_created >= firstday, date_created < lastday,
++          Journal != "non-AEA journal",ticket != "AEAREP-7453") %>%
++   # manual fixes
++   mutate(MCStatus = case_when(
++     ticket == "AEAREP-6996" ~ "CA",
++     TRUE ~ MCStatus
++   ),
++   MCRecommendationV2 = case_when(
++     ticket == "AEAREP-7559" & As.Of.Date >= "2025-07-01T10:37:32.486-0400" ~ "Accept - with Changes",
++     TRUE ~ MCRecommendationV2
++   ))
+filter: removed 54 rows (<1%), 25,582 rows remaining
+mutate: changed 14 values (<1%) of 'MCRecommendationV2' (0 new NA)
+        changed 12 values (<1%) of 'MCStatus' (0 new NA)
+> 
+> # AEAREP-7453: not in scope
+> 
+> saveRDS(jira.anon,file=file.path(temp,"jira_anon_fixed.RDS"))
+> 
+> 
+> # A list of non-issues, typically for information-only
+> jira.pyear.raw <- jira.anon %>%
++   mutate(orig_order = row_number()) %>%
++   mutate(DCAF.clean = sub(".*value='([^']+)'.*", "\\1", DCAF_Access_Restrictions))%>%
++   mutate(Update.type.clean = sub(".*value='([^']+)'.*", "\\1", Update.type))
+mutate: new variable 'orig_order' (integer) with 25,582 unique values and 0% NA
+mutate: new variable 'DCAF.clean' (character) with 6 unique values and 0% NA
+mutate: new variable 'Update.type.clean' (character) with 6 unique values and 0% NA
+> 
+> # We may need in the future to separately tabulate courtesy reports for non-AEA journals
+> 
+> jira.pyear <- jira.pyear.raw %>%
++   arrange(ticket,As.Of.Date,orig_order) %>%
++   # identify only the status changes
++   mutate(status_change = if_else(str_detect(Changed.Fields,"status"),"yes","no")) %>%
++   filter(status_change=="yes"|received=="Yes") %>%
++   # process software and reasons
++   mutate(Software.used = str_remove_all(Software.used, "\\[|\\]|'")) %>%
++     cSplit("Software.used",",")  %>%
++     mutate(reason1=grepl("Discrepancy",reason.failure, ## 8 reasons for failutre to reproduce
++                        fixed = "TRUE"),
++          reason2=grepl("Bugs",reason.failure,
++                        fixed = "TRUE"),
++          reason3=grepl("Insufficient",reason.failure,
++                        fixed = "TRUE"),
++          reason4=grepl("Software",reason.failure,
++                        fixed = "TRUE"),
++          reason5=grepl("functional",reason.failure,
++                        fixed = "TRUE"),
++          reason6=grepl("Data not available",reason.failure,
++                        fixed = "TRUE"),
++          reason6.1=grepl("Data,not,available",reason.failure,
++                          fixed = "TRUE"),
++          reason7=grepl("Data missing",reason.failure,
++                        fixed = "TRUE"),
++          reason7.1=grepl("Data,missing",reason.failure,
++                          fixed = "TRUE"),
++          reason8=grepl("Code missing",reason.failure,
++                        fixed = "TRUE"),
++          reason8.1=grepl("Code,missing",reason.failure,
++                          fixed = "TRUE")) %>% 
++   mutate(reason1=case_when(reason1==TRUE ~ "Discrepancy in Output",
++                            TRUE ~ ""),
++          reason2=case_when(reason2==TRUE ~ "Bugs in code",
++                            TRUE ~ ""),
++          reason3=case_when(reason3==TRUE ~ "Insufficient time available to replicator",
++                            TRUE ~ ""),
++          reason4=case_when(reason4==TRUE ~ "Software not available to replicator",
++                            TRUE ~ ""),
++          reason5=case_when(reason5==TRUE ~ "Code not functional",
++                            TRUE ~ ""),
++          reason6=case_when(reason6==T ~ "Data not available",
++                            reason6.1==T ~ "Data not available",
++                            TRUE ~ ""),
++          reason7=case_when(reason7==T ~ "Data missing",
++                            reason7.1==T ~ "Data missing",
++                            TRUE ~ ""),
++          reason8=case_when(reason8==T ~ "Code missing",
++                            reason8.1==T ~ "Code missing",
++                            TRUE ~ "")) %>%
++   select(-reason6.1,-reason7.1,-reason8.1) 
+mutate: new variable 'status_change' (character) with 2 unique values and 0% NA
+filter: removed 10,403 rows (41%), 15,179 rows remaining
+mutate: changed 5,858 values (39%) of 'Software.used' (0 new NA)
+mutate: new variable 'reason1' (logical) with 2 unique values and 0% NA
+        new variable 'reason2' (logical) with 2 unique values and 0% NA
+        new variable 'reason3' (logical) with 2 unique values and 0% NA
+        new variable 'reason4' (logical) with 2 unique values and 0% NA
+        new variable 'reason5' (logical) with 2 unique values and 0% NA
+        new variable 'reason6' (logical) with 2 unique values and 0% NA
+        new variable 'reason6.1' (logical) with one unique value and 0% NA
+        new variable 'reason7' (logical) with 2 unique values and 0% NA
+        new variable 'reason7.1' (logical) with one unique value and 0% NA
+        new variable 'reason8' (logical) with 2 unique values and 0% NA
+        new variable 'reason8.1' (logical) with one unique value and 0% NA
+mutate: converted 'reason1' from logical to character (0 new NA)
+        converted 'reason2' from logical to character (0 new NA)
+        converted 'reason3' from logical to character (0 new NA)
+        converted 'reason4' from logical to character (0 new NA)
+        converted 'reason5' from logical to character (0 new NA)
+        converted 'reason6' from logical to character (0 new NA)
+        converted 'reason7' from logical to character (0 new NA)
+        converted 'reason8' from logical to character (0 new NA)
+select: dropped 3 variables (reason6.1, reason7.1, reason8.1)
+Warning messages:
+1: In type.convert.default(X[[i]], ...) :
+  'as.is' should be specified by the caller; using TRUE
+2: In type.convert.default(X[[i]], ...) :
+  'as.is' should be specified by the caller; using TRUE
+3: In type.convert.default(X[[i]], ...) :
+  'as.is' should be specified by the caller; using TRUE
+4: In type.convert.default(X[[i]], ...) :
+  'as.is' should be specified by the caller; using TRUE
+5: In type.convert.default(X[[i]], ...) :
+  'as.is' should be specified by the caller; using TRUE
+> 
+> test.tickets.1 <- jira.pyear %>% distinct(ticket) %>% nrow()
+distinct: removed 14,534 rows (96%), 645 rows remaining
+> test.rows.1 <- nrow(jira.pyear)
+> 
+> message(paste0("Pyear: Rows ",test.rows.1,", Tickets ",test.tickets.1))
+Pyear: Rows 15179, Tickets 645
+> 
+> # identifying the list of received tickets
+> ji <- jira.pyear %>%
++   select(ticket,Journal) %>%
++   distinct(ticket, .keep_all = TRUE) 
+select: dropped 48 variables (Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, Computing.Environment, …)
+distinct: removed 14,534 rows (96%), 645 rows remaining
+> 
+> # identifying the list of issues went through alternate workflow
+> ji_alt <- jira.pyear %>%
++   filter(Status == "Alternate"|Status=="Alternate workflow") %>%
++   # Careful, as there may be some loops. We take the last such observation
++   arrange(ticket,desc(As.Of.Date)) %>%
++   group_by(ticket) %>%
++   filter(row_number()==1) %>%
++   ungroup() %>%
++   select(ticket) %>%
++   distinct() %>%
++   mutate(alternate="Yes")
+filter: removed all rows (100%)
+group_by: one grouping variable (ticket)
+filter (grouped): no rows removed
+ungroup: no grouping variables
+select: dropped 49 variables (Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, Computing.Environment, …)
+distinct: no rows removed
+mutate: new variable 'alternate' (character) with 0 unique values and 100% NA
+> 
+> # identifying the list of submitted issues
+> jira.filter.submitted.list <- jira.pyear %>%
++   filter(Status == "Submitted to MC" & Journal != "AEA P&P") %>%
++   group_by(ticket) %>%
++   arrange(As.Of.Date,.by_group = TRUE) %>%
++   # Keep the last row for each ticket
++   dplyr::slice_tail(n = 1) %>%
++   ungroup() %>%
++   select(ticket,min_date=As.Of.Date)
+filter: removed 14,766 rows (97%), 413 rows remaining
+group_by: one grouping variable (ticket)
+ungroup: no grouping variables
+select: renamed one variable (min_date) and dropped 48 variables
+> 
+> jira.filter.submitted <- left_join(jira.filter.submitted.list,jira.pyear,by="ticket") %>%
++   filter(As.Of.Date >= min_date) %>%
++   # Careful, as there may be some loops. We take the last such observation
++   group_by(ticket) %>%
++   arrange(ticket,desc(As.Of.Date),.by_group = TRUE) %>%
++   filter(row_number()==1) %>%
++   ungroup() 
+left_join: added 49 columns (Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, Computing.Environment, …)
+           > rows only in x        0
+           > rows only in y  ( 4,290)
+           > matched rows     10,889    (includes duplicates)
+           >                 ========
+           > rows total       10,889
+filter: removed 9,268 rows (85%), 1,621 rows remaining
+group_by: one grouping variable (ticket)
+filter (grouped): removed 1,212 rows (75%), 409 rows remaining
+ungroup: no grouping variables
+> 
+> jis <- jira.filter.submitted %>%
++   select(ticket) %>%
++   distinct() %>%
++   mutate(submitted="Yes")
+select: dropped 50 variables (min_date, Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, …)
+distinct: no rows removed
+mutate: new variable 'submitted' (character) with one unique value and 0% NA
+> 
+> # figure out the final status of the issue as of 12/01/
+> 
+> jifstatus <- jira.pyear %>%
++   # Careful, as there may be some loops. We take the last such observation
++   arrange(ticket,desc(As.Of.Date)) %>%
++   group_by(ticket) %>%
++   filter(row_number()==1) %>%
++   ungroup() %>%select(ticket,final_status = Status,As.Of.Date)
+group_by: one grouping variable (ticket)
+filter (grouped): removed 14,534 rows (96%), 645 rows remaining
+ungroup: no grouping variables
+select: renamed one variable (final_status) and dropped 47 variables
+> 
+> # categorize issues: P&P, Submitted, Not yet submitted, Alternate workflow, Others.
+> jira.issues.breakout.early <- ji %>%  
++   left_join(jis,by="ticket") %>%
++   left_join(ji_alt,by="ticket") %>%
++   transform(submitted=ifelse(is.na(submitted),"No",as.character(submitted)),
++             alternate=ifelse(is.na(alternate),"No",as.character(alternate))) %>%
++   select(ticket,Journal,submitted,alternate) %>%
++   left_join(jifstatus, by="ticket") 
+left_join: added one column (submitted)
+           > rows only in x   236
+           > rows only in y  (  0)
+           > matched rows     409
+           >                 =====
+           > rows total       645
+left_join: added one column (alternate)
+           > rows only in x   645
+           > rows only in y  (  0)
+           > matched rows       0
+           >                 =====
+           > rows total       645
+select: no changes
+left_join: added 2 columns (final_status, As.Of.Date)
+           > rows only in x     0
+           > rows only in y  (  0)
+           > matched rows     645
+           >                 =====
+           > rows total       645
+> 
+> # we now use the override file, if there is one, to correct some values
+> # before classifiying further
+> 
+> if (!file.exists(file.path(jiraanon,"jira.others.xlsx")) ) {
++   message("Override file not found. Run through this code once, then read instructions.")
++   message(paste0("==== ",file.path(jiraanon,"jira.others.xlsx")," ====="))
++   jira.issues.breakout.late <- jira.issues.breakout.early
++ } else {
++   message("File exists, proceeding.")
++   jira.override <- read_excel(file.path(jiraanon,"jira.others.xlsx"),
++                               sheet="override")
++   jira.issues.breakout.late <- jira.issues.breakout.early %>%
++     left_join(jira.override,by="ticket",suffix = c("",".override")) %>%
++     mutate(submitted = if_else(!is.na(submitted != submitted.override),
++                                submitted.override,submitted),
++            alternate = if_else(!is.na(alternate != alternate.override),
++                                alternate.override,alternate),
++            final_status = if_else(!is.na(final_status != final_status.override),
++                                final_status.override,final_status))
++ }
+File exists, proceeding.
+left_join: added 5 columns (Journal.override, submitted.override, alternate.override, final_status.override, outcome)
+           > rows only in x   495
+           > rows only in y  (  0)
+           > matched rows     150
+           >                 =====
+           > rows total       645
+mutate: no changes
+> 
+> jira.issues.breakout <- jira.issues.breakout.late %>%
++   # collapse outcomes
++   transform(outcome=case_when(
++                     submitted == "Yes" ~ "Submitted",
++                     final_status %in% c("Open","Assigned","In Progress",
++                                         "Code","Data",
++                                            "Report Under Review","Write Preliminary Report",
++                                            "Verification","Pre-Approved","Approved","Data",
++                                            "Waiting for info","Waiting for external report",
++                                            "Writing Report") ~ "Not yet submitted",
++                     final_status %in% c("Incomplete","Blocked") ~ "Incomplete",
++                     alternate=="Yes" ~ "Alternate",
++                     TRUE ~ "Others"))  
+> 
+> # summarize the breakdown of the cases
+> summary.breakout <- jira.issues.breakout %>%  
++   group_by(outcome) %>%
++   summarise(n_outcome = n_distinct(ticket)) 
+group_by: one grouping variable (outcome)
+summarise: now 3 rows and 2 columns, ungrouped
+> 
+> ## separate the "Others" case
+> jira.others <- jira.issues.breakout %>%
++   filter(outcome=="Others"|outcome=="Alternate") 
+filter: removed 495 rows (77%), 150 rows remaining
+> 
+> # This filters for the cases **submitted** in the past 12 months
+> issues_all <- jira.pyear %>%
++   filter(!(Journal=="")) %>%
++   select(ticket) %>%
++   distinct() %>% nrow()
+filter: removed 1,490 rows (10%), 13,689 rows remaining
+select: dropped 49 variables (Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, Computing.Environment, …)
+distinct: removed 13,044 rows (95%), 645 rows remaining
+> 
+> manuscript_all <- jira.pyear %>%
++   filter(!(Journal=="")) %>%
++   select(mc_number_anon) %>% 
++   distinct() %>% nrow()
+filter: removed 1,490 rows (10%), 13,689 rows remaining
+select: dropped 49 variables (Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, Computing.Environment, …)
+distinct: removed 13,139 rows (96%), 550 rows remaining
+> 
+> ## Non-compliant Cases
+> jira.search.nc <- jira.pyear.raw %>%
++   mutate(Non.compliant2 = if_else(str_detect(Non.compliant,"Yes"),"yes","no")) %>%
++   filter(Non.compliant2=="yes") %>%
++   group_by(ticket) %>%
++   slice(which.max(as.Date(date_asof, '%Y/%m/%d')))%>%
++   select(ticket)
+mutate: new variable 'Non.compliant2' (character) with 2 unique values and 0% NA
+filter: removed 25,491 rows (>99%), 91 rows remaining
+group_by: one grouping variable (ticket)
+slice (grouped): removed 81 rows (89%), 10 rows remaining
+select: dropped 37 variables (Agreement.signed, As.Of.Date, assignee_anon, Changed.Fields, Computing.Environment, …)
+> 
+> jira.search.nc.all <- jira.pyear.raw[jira.pyear.raw$ticket %in% jira.search.nc$ticket, ]%>%
++   group_by(ticket) %>%
++   slice(which.max(as.Date(As.Of.Date, "%Y-%m-%dT%H:%M:%OS%z")))%>%
++   mutate(Non.compliant2 = if_else(str_detect(Non.compliant,"Yes"),"yes","no")) %>%
++   filter(Non.compliant2=="yes") %>%
++   select(ticket,As.Of.Date,mc_number_anon,Status,assignee_anon,MCStatus,DCAF.clean,Resolution)
+group_by: one grouping variable (ticket)
+slice (grouped): removed 285 rows (97%), 10 rows remaining
+mutate (grouped): new variable 'Non.compliant2' (character) with 2 unique values and 0% NA
+filter (grouped): removed 5 rows (50%), 5 rows remaining
+select: dropped 30 variables (Agreement.signed, Changed.Fields, Computing.Environment, DataAccessReplicationTeam, DataAnonymous, …)
+> 
+> ## Updates
+> jira.search.up <- jira.pyear.raw %>%
++   filter(MCStatus=="Update")%>%
++   group_by(ticket) %>%
++   # A few issues are subtasks and should not be here. This needs to be filtered out upstream
++   mutate(exclude=(ticket %in% c("AEAREP-4837","AEAREP-5481","AEAREP-5657","AEAREP-5952","AEAREP-5993"))) %>%
++   filter(exclude==FALSE) %>%
++   # -- end special filter
++   # -- Start workaround for incomplete data - manually verified
++   mutate(Update.type.clean = if_else(Update.type.clean =="","Data provider",Update.type.clean)) %>%
++   # -- end Workaround
++   slice(which.max(as.Date(As.Of.Date, "%Y-%m-%dT%H:%M:%OS%z")))%>%
++   select(ticket,As.Of.Date,mc_number_anon,Status,assignee_anon,MCStatus,Update.type.clean,Resolution)%>%
++   rename(Update.type = Update.type.clean)
+filter: removed 25,065 rows (98%), 517 rows remaining
+group_by: one grouping variable (ticket)
+mutate (grouped): new variable 'exclude' (logical) with one unique value and 0% NA
+filter (grouped): no rows removed
+mutate (grouped): changed 193 values (37%) of 'Update.type.clean' (0 new NA)
+slice (grouped): removed 481 rows (93%), 36 rows remaining
+select: dropped 30 variables (Agreement.signed, Changed.Fields, Computing.Environment, DataAccessReplicationTeam, DataAnonymous, …)
+rename: renamed one variable (Update.type)
+> 
+> #Output missing updatetype
+> missing.update.type <- subset(jira.search.up, subset = Update.type == "")
+> 
+> # Only export to Excel if there are any empty rows
+> if (nrow(missing.update.type) > 0) {
++   # Create the Excel file
++   write.xlsx(missing.update.type, "missing_update_type.xlsx", rowNames = FALSE)
++   
++   cat("Excel file 'missing_update_type.xlsx' created with missing update type.")
++ } else {
++   cat("Update type always filled; no file created.")
++ }
+Update type always filled; no file created.> 
+> ## NDAs
+> jira.search.nda <- jira.pyear.raw %>% 
++   # identify only the NDA
++   mutate(NDA = if_else(str_detect(Agreement.signed,"NDA"),"yes","no")) %>%
++   mutate(DUA = if_else(str_detect(Agreement.signed,"DUA"),"yes","no")) %>%
++   filter(NDA=="yes"|DUA=="yes") %>%
++   group_by(ticket) %>%
++   slice(which.max(as.Date(As.Of.Date, "%Y-%m-%dT%H:%M:%OS%z")))
+mutate: new variable 'NDA' (character) with 2 unique values and 0% NA
+mutate: new variable 'DUA' (character) with 2 unique values and 0% NA
+filter: removed 22,192 rows (87%), 3,390 rows remaining
+group_by: one grouping variable (ticket)
+slice (grouped): removed 3,250 rows (96%), 140 rows remaining
+> 
+> jira.search.nda$Agreement.cleaned <- sapply(jira.search.nda$Agreement.signed, function(x) {
++   # Extract words after "value='"
++   values <- unlist(regmatches(x, gregexpr("(?<=value=')\\w+", x, perl=TRUE)))
++   
++   # If no "value=" pattern was found, split by comma (for already clean entries)
++   if (length(values) == 0) {
++     values <- strsplit(x, ",")[[1]]
++   }
++   
++   # Join the values with "; " separator
++   paste(values, collapse = "; ")
++ })
+> 
+> jira.search.nda <- jira.search.nda %>%
++   select(ticket,As.Of.Date,mc_number_anon,Status,assignee_anon,MCStatus,Agreement.cleaned,Resolution)%>%
++   rename(Agreement.signed = Agreement.cleaned)
+select: dropped 32 variables (Agreement.signed, Changed.Fields, Computing.Environment, DataAccessReplicationTeam, DataAnonymous, …)
+rename: renamed one variable (Agreement.signed)
+> 
+> ## External
+> jira.search.ext <- jira.pyear.raw %>%
++   filter(external=="Yes") %>%
++   group_by(ticket) %>%
++   slice(which.max(as.Date(As.Of.Date, "%Y-%m-%dT%H:%M:%OS%z")))%>%
++   select(ticket,As.Of.Date,mc_number_anon,Status,assignee_anon,MCStatus,DCAF.clean,external,External.party.name,Resolution)
+filter: removed 25,021 rows (98%), 561 rows remaining
+group_by: one grouping variable (ticket)
+slice (grouped): removed 537 rows (96%), 24 rows remaining
+select: dropped 27 variables (Agreement.signed, Changed.Fields, Computing.Environment, DataAccessReplicationTeam, DataAnonymous, …)
+> 
+> # we will re-use these 
+> saveRDS(jira.pyear,file=file.path(temp,"jira.pyear.RDS"))
+> saveRDS(jira.filter.submitted,file=file.path(temp,"jira.submitted.RDS"))
+> saveRDS(jira.issues.breakout ,file=file.path(temp,"jira.breakout.RDS"))
+> saveRDS(jira.others,file=file.path(jiraanon,"jira.others.RDS"))
+> 
+> saveRDS(jira.search.nc.all,file=file.path(temp,"jira.nc.RDS"))
+> saveRDS(jira.search.up,file=file.path(temp,"jira.up.RDS"))
+> saveRDS(jira.search.nda,file=file.path(temp,"jira.nda.RDS"))
+> saveRDS(jira.search.ext,file=file.path(temp,"jira.ext.RDS"))
+> 
+> # this file will be used to revise the flow above. 
+> # Copy the sheet "output" to a sheet"override", edit, and then run this code again.
+> 
+> if (file.exists(file.path(jiraanon,"jira.others.xlsx")) ) {
++   message("File found. Preserving overrides, then read instructions.")
++   override <- read_excel(path=file.path(jiraanon,"jira.others.xlsx"),
++                          sheet="override")
++ } else {
++   # file doesn't exist, we instantiate the override sheet with the 
++   # current list
++   override <- jira.others
++ }
+File found. Preserving overrides, then read instructions.
+> # now write the file.
+>   write_xlsx(list(output=jira.others,override=override),
++            path=file.path(jiraanon,"jira.others.xlsx"))
+> 
+> 
+> # we used the start and end date here, so write them out
+> update_latexnums("firstday",firstday)
+Adding new row for field firstday
+> update_latexnums("lastday",lastday)
+Adding new row for field lastday
+> #update_latexnums("jiraissues",issues_all)
+> #update_latexnums("jiramcs",manuscript_all)
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  2.269   0.678   1.997 

@@ -1,0 +1,30 @@
+id,doi,title,created,revision,downloads,views,unique_downloads,unique_views
+15230440,10.5281/zenodo.15230440,Data and Code for: ANATOMY OF THE PHILLIPS CURVE: MICRO EVIDENCE AND MACRO IMPLICATIONS,2025-10-03T13:08:38.475780+00:00,8,239,77,133,66
+15709068,10.5281/zenodo.15709068,Supplemental data for: Targeting impact versus deprivation (batch 3),2025-06-25T12:40:41.279047+00:00,4,54,33,54,28
+15708435,10.5281/zenodo.15708435,Supplemental data for: Targeting impact versus deprivation (batch 2),2025-06-25T12:39:37.290277+00:00,4,84,31,80,26
+15539991,10.5281/zenodo.15539991,Supplemental data for: Targeting impact versus deprivation (batch 1),2025-06-25T12:36:33.813427+00:00,4,152,39,144,31
+11094339,10.5281/zenodo.11094339,AEADataEditor/docker-aer-2023-0700: Docker image for software stack used in AER-2023-0700,2024-04-30T17:21:40.848965+00:00,8,55,764,54,753
+10848594,10.5281/zenodo.10848594,Data and Code for: Temporal Aggregation for the Synthetic Control Method,2024-04-09T13:00:26.917995+00:00,6,581,334,533,321
+10785278,10.5281/zenodo.10785278,Data and Code for: Real-Time Pricing and the Cost of Clean Power,2024-03-12T11:17:48.420885+00:00,8,2379,560,2071,540
+10440397,10.5281/zenodo.10440397,The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts - Miscellaneous Public Data,2023-12-29T03:18:49.938696+00:00,10,70,58,70,53
+10408818,10.5281/zenodo.10408818,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 6)",2023-12-23T14:05:00.933071+00:00,12,91,126,80,120
+10403941,10.5281/zenodo.10403941,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 1)",2023-12-23T12:34:18.905976+00:00,16,2236,139,2234,127
+10404858,10.5281/zenodo.10404858,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 5)",2023-12-23T12:31:30.035884+00:00,10,269,59,268,55
+10404834,10.5281/zenodo.10404834,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 2)",2023-12-23T12:25:15.680049+00:00,14,513,121,513,115
+10404840,10.5281/zenodo.10404840,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 3)",2023-12-23T12:25:13.989608+00:00,10,384,103,384,91
+10404846,10.5281/zenodo.10404846,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 4)",2023-12-23T12:25:11.018024+00:00,10,279,60,267,55
+10408820,10.5281/zenodo.10408820,"The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (edgar log, batch 7)",2023-12-23T12:23:28.667483+00:00,16,130,129,130,123
+10426559,10.5281/zenodo.10426559,The Paradox of Innovation Non-Disclosure: Evidence from Licensing Contracts (patent data),2023-12-23T12:22:54.303051+00:00,8,1640,142,1640,137
+8006639,10.5281/zenodo.8006639,"Data and Code for: ""Information and Spillovers from Targeting Policy in Peru's Anchoveta Fishery""",2023-06-05T15:04:44.225518+00:00,6,106,500,99,457
+7806735,10.5281/zenodo.7806735,Replication package for Occupational Exposure to Capital Embodied Technical Change,2023-04-06T20:15:31.588952+00:00,6,287,683,234,619
+7783635,10.5281/zenodo.7783635,julicaunedo/Data and Code for: Occupational Exposure to Capital Embodied Technical Change,2023-03-30T02:29:10.932810+00:00,5,111,375,106,352
+7405356,10.5281/zenodo.7405356,"Data for: ""Market Power and Price Exposure: Learning from Changes in Renewable Energy Regulation""",2022-12-06T15:38:08.715801+00:00,10,338,412,312,377
+6568295,10.5281/zenodo.6568295,Precios Claros (2016-05 - 2018-03),2022-05-24T17:50:20.540876+00:00,7,32430,416,28382,384
+5830968,10.5281/zenodo.5830968,USGS National Map 3DEP 1 Arc-second Digital Elevation Models (DEMs): Full Coverage for U.S. Interstate Highway System,2022-01-19T19:42:21.208966+00:00,7,237613,655,233184,604
+5823387,10.5281/zenodo.5823387,National Wetlands Inventory of the United States - State and Substate Shapefiles,2022-01-05T22:23:48.162106+00:00,5,4235,345,3570,324
+5172755,10.5281/zenodo.5172755,"Data Storage for Baylis and Boomhower (2022): Fire Characteristics, Expenditures, and Other Miscellaneous Datasets",2021-12-04T01:20:35.435992+00:00,9,249,126,195,112
+5172939,10.5281/zenodo.5172939,"Data Storage for Baylis and Boomhower (2022): LANDFIRE Aspect, Elevation, Slope, and Anderson 13 Fuel Models",2021-12-04T01:20:25.892215+00:00,10,25,333,24,321
+5521370,10.5281/zenodo.5521370,Presentation: Firm-Academic Research Collaborations in Economics - Journals' Perspective,2021-09-22T13:38:19.416559+00:00,7,135,114,120,104
+4317553,10.5281/zenodo.4317553,Global daily Aerosol Optical Depth measurements from Moderate Resolution Imaging Spectroradiometer (MODIS) on NASA's Aqua and Terra satellites,2021-08-27T13:56:25.570658+00:00,7,28165,620,10405,582
+5151203,10.5281/zenodo.5151203,"Code for ""How Contagious was the Panic of 1907? New Evidence from Trust Company Stocks""",2021-08-01T08:05:49.101611+00:00,8,168,233,152,206
+13324008,10.5281/zenodo.13324008,Data for: Closing the gender gap in patenting: Evidence from a randomized control trial at the USPTO,2025-01-21T18:18:56.944707+00:00,4,109,28,70,26

@@ -1,0 +1,415 @@
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # Tabulate the categories
+> 
+> 
+> ### Load libraries 
+> ### Requirements: have library *here*
+> source(here::here("global-libraries.R"),echo=TRUE)
+
+> ppm.date <- "2023-11-01"
+
+> options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/focal/", 
++     ppm.date)))
+
+> global.libraries <- c("dplyr", "here", "tidyr", "tibble", 
++     "stringr", "readr", "openxlsx", "splitstackshape", "digest", 
++     "remotes", "rea ..." ... [TRUNCATED] 
+
+> pkgTest <- function(x) {
++     if (!require(x, character.only = TRUE)) {
++         install.packages(x, dep = TRUE)
++         if (!require(x, charact .... [TRUNCATED] 
+
+> pkgTest.github <- function(libname, source, pkgname = libname) {
++     if (!require(libname, character.only = TRUE)) {
++         if (pkgname == "")  .... [TRUNCATED] 
+
+> results <- sapply(as.list(global.libraries), pkgTest)
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: here
+here() starts at /home/rstudio/project
+Loading required package: tidyr
+Loading required package: tibble
+Loading required package: stringr
+Loading required package: readr
+Loading required package: openxlsx
+Loading required package: splitstackshape
+Loading required package: digest
+Loading required package: remotes
+Loading required package: readxl
+Loading required package: writexl
+Loading required package: ggplot2
+Loading required package: ggthemes
+Loading required package: janitor
+
+Attaching package: ‘janitor’
+
+The following objects are masked from ‘package:stats’:
+
+    chisq.test, fisher.test
+
+Loading required package: dataverse
+Loading required package: xtable
+Loading required package: viridis
+Loading required package: viridisLite
+Loading required package: kableExtra
+
+Attaching package: ‘kableExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+Loading required package: knitr
+Loading required package: tidylog
+
+Attaching package: ‘tidylog’
+
+The following objects are masked from ‘package:tidyr’:
+
+    drop_na, fill, gather, pivot_longer, pivot_wider, replace_na,
+    spread, uncount
+
+The following objects are masked from ‘package:dplyr’:
+
+    add_count, add_tally, anti_join, count, distinct, distinct_all,
+    distinct_at, distinct_if, filter, filter_all, filter_at, filter_if,
+    full_join, group_by, group_by_all, group_by_at, group_by_if,
+    inner_join, left_join, mutate, mutate_all, mutate_at, mutate_if,
+    relocate, rename, rename_all, rename_at, rename_if, rename_with,
+    right_join, sample_frac, sample_n, select, select_all, select_at,
+    select_if, semi_join, slice, slice_head, slice_max, slice_min,
+    slice_sample, slice_tail, summarise, summarise_all, summarise_at,
+    summarise_if, summarize, summarize_all, summarize_at, summarize_if,
+    tally, top_frac, top_n, transmute, transmute_all, transmute_at,
+    transmute_if, ungroup
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+> pkgTest.github("stargazer", "markwestcott34", "stargazer-booktabs")
+Loading required package: stargazer
+
+Please cite as: 
+
+ Hlavac, Marek (2015). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2. http://CRAN.R-project.org/package=stargazer 
+
+[1] "OK"
+> source(here::here("programs","config.R"),echo=TRUE)
+
+> process_anon <- TRUE
+
+> download_anon <- TRUE
+
+> report.year <- 2025
+
+> firstday <- paste0(as.character(report.year - 1), 
++     "-12-01")
+
+> lastday <- paste0(as.character(report.year), "-11-30")
+
+> basepath <- here::here()
+
+> setwd(basepath)
+
+> jira.anon.partial <- file.path("data", "jira", "anon")
+
+> jiraconf <- file.path(basepath, "data", "confidential", 
++     "jira")
+
+> jiraanon <- file.path(basepath, jira.anon.partial)
+
+> manual <- file.path(basepath, "data", "manual")
+
+> jira.raw <- file.path("data", "jira", "raw")
+
+> icpsrconf <- file.path(basepath, "data", "confidential", 
++     "icpsr")
+
+> icpsrbase <- file.path(basepath, "data", "icpsr")
+
+> icpsr.utilization.date <- "2025-12-08"
+
+> icpsr.utilization.file <- paste0("utilizationReport-", 
++     icpsr.utilization.date, ".csv")
+
+> icpsr.custom.xlsx <- "AEA_Report_20251205_edited.csv"
+
+> zenodobase <- file.path(basepath, "data", "zenodo")
+
+> jira.anon.name <- file.path(jiraanon, "jira.anon.RDS")
+
+> jira.anon.commit <- "91a673fe3d07fe6970588dfd62e3c85aff8774ec"
+
+> jira.anon.sha256 <- "c4e35e6b62581d6652109bb0c1134861e7715d721b22e254dc7fa69d8191779f"
+
+> jira.anon.urlbase <- paste0("https://raw.githubusercontent.com/AEADataEditor/processing-jira-process-data/", 
++     jira.anon.commit)
+
+> jira.anon.url <- file.path(jira.anon.urlbase, "data", 
++     "anon", "jira.anon.RDS")
+
+> jira.members.url <- file.path(jira.anon.urlbase, "data", 
++     "replicationlab_members.txt")
+
+> jira.members.name <- file.path(jiraanon, "replicationlab_members.txt")
+
+> scholarone <- file.path(basepath, "data", "scholarone")
+
+> scholarone.file <- "dataEditorReport_20241111-20251110.xlsx"
+
+> scholarone.name <- file.path(scholarone, scholarone.file)
+
+> scholarone.prev <- "dataEditorReport_20231111-20241110.xlsx"
+
+> scholarone.skip <- 31
+
+> scholarone.skip2 <- 42
+
+> scholarone.pskip <- 33
+
+> images <- file.path(basepath, "images")
+
+> tables <- file.path(basepath, "tables")
+
+> programs <- file.path(basepath, "programs")
+
+> temp <- file.path(basepath, "data", "temp")
+
+> latexnums.Rda <- file.path(tables, "latexnums.Rda")
+
+> latexnums.tex <- file.path(tables, "latexnums.tex")
+
+> for (dir in list(images, tables, programs, temp)) {
++     if (file.exists(dir)) {
++     }
++     else {
++         dir.create(file.path(dir))
++     }
+ .... [TRUNCATED] 
+
+> set.seed(20201201)
+
+> pkgTest("tibble")
+[1] "OK"
+
+> if (file.exists(latexnums.Rda)) {
++     print(paste0("File for export to LaTeX found: ", latexnums.Rda))
++ } else {
++     latexnums <- tibble(field  .... [TRUNCATED] 
+[1] "File for export to LaTeX found: /home/rstudio/project/tables/latexnums.Rda"
+
+> update_latexnums <- function(field, value) {
++     latexnums <- readRDS(latexnums.Rda)
++     if (any(latexnums$field == field)) {
++         message( .... [TRUNCATED] 
+
+> .Last <- function() {
++     sessionInfo()
++ }
+> 
+> 
+> 
+> ## Save the jira_access_cleaned file for later use
+> 
+> jira_access_cleaned <- readRDS(file = file.path(jiraanon, "jira_access_cleaned.RDS"))
+> 
+> # get the total number of manuscripts
+> 
+> n_manuscripts <- jira_access_cleaned %>%
++     dplyr::distinct(mc_number_anon) %>%
++     nrow()
+> 
+> access_table <- jira_access_cleaned %>%
++     dplyr::count(DCAF_Access_Restrictions_V2, Privately_shareable) %>%
++     tidyr::pivot_wider(names_from = Privately_shareable, values_from = n, values_fill = list(n = 0)) %>%
++     dplyr::mutate(Total = Yes + No) 
+> 
+> # Add a row with the column sums
+> access_table_totals <- access_table %>%
++     filter(DCAF_Access_Restrictions_V2 != "No") %>%
++     summarise(No=sum(No),Yes=sum(Yes),Total=sum(Total)) %>%
++     mutate(DCAF_Access_Restrictions_V2 = "Any restriction") %>%
++     select(DCAF_Access_Restrictions_V2,No,Yes,Total)
+filter: removed one row (20%), 4 rows remaining
+summarise: now one row and 3 columns, ungrouped
+mutate: new variable 'DCAF_Access_Restrictions_V2' (character) with one unique value and 0% NA
+select: columns reordered (DCAF_Access_Restrictions_V2, No, Yes, Total)
+> 
+> # For the print table, 
+> # - replace the DCAF_Access_Restrictions_V2 = No/Yes column with "n/a" if the value is 0
+> # - Add a column with the percentage of "Yes" next to the "Yes" column
+> print_access_table <- bind_rows(access_table,access_table_totals) %>%
++     dplyr::mutate(
++         Yes_percent = scales::percent(Yes / Total, accuracy = 0.01),
++         Yes = ifelse(Yes == 0, "n/a", Yes),
++         No  = ifelse(DCAF_Access_Restrictions_V2 == "No","",No),
++         Yes_percent = ifelse(Yes == "n/a","",Yes_percent)
++     ) %>%
++ # the percent column should be printed in parenthesis and italics
++ # The footnote should explain that the percentages are calculated as the number of "Yes" divided by the total number of responses
++     dplyr::mutate(
++         Yes_percent = ifelse(Yes_percent == "", Yes_percent, paste0("(", Yes_percent, ")"))
++     ) %>%
++     select("Access restrictions"=DCAF_Access_Restrictions_V2,No,Yes,Total,"Percent"=Yes_percent)
+select: renamed 2 variables (Access restrictions, Percent)
+> 
+> # Create the LaTeX table
+> kable(print_access_table, 
++       format = "latex", 
++       booktabs = TRUE, 
++       label = "access_provision",
++       caption = "Access categories and whether data can be shared privately") %>%
++   kable_styling(latex_options = "hold_position") %>%
++   row_spec(1, hline_after = TRUE) %>%
++   row_spec(nrow(print_access_table) - 1, hline_after = TRUE) %>%
++   add_footnote(paste0("Percentages are calculated as the number of cases that provided data privately, not for publication, relative to the total number of cases in that category. An article can have multiple categories of data. The number of cases is thus higher than the total number of manuscripts contributing to this table (n=",n_manuscripts,"). "), 
++                notation = "symbol") %>%
++   save_kable(file.path(tables, "table_access_provision.tex"))
+> 
+> 
+> library(ggplot2)
+> library(viridis)
+> 
+> # Prepare data for graph - convert print_access_table back to numeric for plotting
+> plot_data <- bind_rows(access_table, access_table_totals) %>%
++   # Convert factors to character to ensure proper ordering
++   mutate(DCAF_Access_Restrictions_V2 = as.character(DCAF_Access_Restrictions_V2)) %>%
++   # Calculate percentages for labels
++   mutate(
++     Yes_percent = ifelse(Total > 0, Yes/Total, 0),
++     NAx = ifelse(DCAF_Access_Restrictions_V2 == "No",Total,0),
++     No  = if_else(NAx == Total,0,No),
++     Total = ifelse(NAx == Total,0,Total),
++     Yes_label_pct = ifelse(Yes > 0, scales::percent(Yes_percent, accuracy = 0.1), ""),
++     Yes_label_count = ifelse(Yes > 0, as.character(Yes), ""),
++     No_label_count = ifelse(No > 0, as.character(No), ""),
++     NAx_label_count = ifelse(NAx > 0, as.character(NAx), "")
++   )
+mutate: no changes
+mutate: converted 'No' from integer to double (0 new NA)
+        converted 'Total' from integer to double (0 new NA)
+        new variable 'Yes_percent' (double) with 6 unique values and 0% NA
+        new variable 'NAx' (double) with 2 unique values and 0% NA
+        new variable 'Yes_label_pct' (character) with 6 unique values and 0% NA
+        new variable 'Yes_label_count' (character) with 6 unique values and 0% NA
+        new variable 'No_label_count' (character) with 6 unique values and 0% NA
+        new variable 'NAx_label_count' (character) with 2 unique values and 0% NA
+> 
+> # Set the order for the categories
+> plot_data$DCAF_Access_Restrictions_V2 <- factor(
++   plot_data$DCAF_Access_Restrictions_V2,
++   levels = c("Any restriction", "Very Difficult to Obtain", "Moderately Difficult to Obtain", 
++              "Moderately Easy to Obtain", "Very Easy to Obtain", "No")
++ )
+> 
+> # need the max of all total counts - we'll add 10
+> maxcount <- max(plot_data$Total)
+> 
+> # Create the horizontal bar graph
+> access_plot <- ggplot(plot_data, aes(x = DCAF_Access_Restrictions_V2)) +
++   theme_minimal() +
++   coord_flip() +
++   # Convert data to long format for proper stacking
++   geom_col(aes(y = maxcount + 10, fill = "No"), width = 0.7, alpha = 0) +
++   geom_col(aes(y = NAx, fill = "NAx"), width = 0.7) +
++   geom_col(aes(y = Total, fill = "No"), width = 0.7) +
++   geom_col(aes(y = Yes, fill = "Yes"), width = 0.7) +
++   # Add "Yes" percentage labels inside bars
++   geom_text(aes(label = Yes_label_pct, y = maxcount + 10 ), 
++             hjust = 0.5, 
++             color = "black", 
++             fontface = "bold",
++             size = 3.5) +
++   # Add "No" count labels outside bars to the right
++   geom_text(aes(label = No_label_count, y = Yes + No/2 - 1), 
++             hjust = -0.3, 
++             color = "white", 
++             fontface = "bold",
++             size = 3.5) +
++   # Add "Yes" count labels inside bars
++   geom_text(aes(label = Yes_label_count, y = Yes/2 - 1), 
++             hjust = -0.3, 
++             color = "white", 
++             fontface = "bold",
++             size = 3.5) +
++   # Add "NA" count labels inside bars
++   geom_text(aes(label = NAx_label_count, y = NAx/2 - 1), 
++             hjust = -0.3, 
++             color = "black", 
++             fontface = "bold",
++             size = 3.5) +
++   scale_fill_manual(values = c("No" = "#1F9E89FF", "Yes" = "#31688EFF", "NAx" = "#B4DE2CFF"),
++                     name = "Can be shared privately",
++                     labels = c("NA","No","Yes")) +
++   labs(
++     title = "Access categories and whether data can be shared privately",
++     x = "",
++     y = "Number of cases"
++   ) +
++   # Add extra space on the right for the external labels
++   #scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
++   theme_minimal() +
++   theme(
++     legend.position = "bottom",
++     #panel.grid.major.y = element_blank(),
++     panel.grid.minor = element_blank(),
++     plot.title = element_text(hjust = 0.5, face = "bold")
++   )
+> 
+> # Save the plot
+> ggsave(
++   file.path(images, "figure_access_provision.pdf"),
++   access_plot,
++   width = 8,
++   height = 5,
++   device = cairo_pdf
++ )
+> 
+> # Also save as PNG for potential inclusion in presentations
+> ggsave(
++   file.path(images, "figure_access_provision.png"),
++   access_plot,
++   width = 8,
++   height = 5,
++   dpi = 300
++ )
+> 
+> 
+> 
+> 
+> proc.time()
+   user  system elapsed 
+  2.135   0.621   1.938 
