@@ -1,6 +1,6 @@
 # 2025 Report by the Data Editor
 
-> This deposit was made late, because just before publication, a hard-drive failure lead to the loss of the ready-to-publish files. A warning note to keep copies of all data in redundant locations.
+> This deposit was made late, because just before publication, a hard-drive failure led to the loss of the ready-to-publish files. A warning note to keep copies of all data in redundant locations.
 
 ## Overview
 
