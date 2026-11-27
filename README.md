@@ -1,5 +1,7 @@
 # 2025 Report by the Data Editor
 
+> This deposit was made late, because just before publication, a hard-drive failure lead to the loss of the ready-to-publish files. A warning note to keep copies of all data in redundant locations.
+
 ## Overview
 
 The code in this replication package constructs analysis files from four data sources (JIRA process data, openICPSR deposit data, ScholarOne processing-time data, and Zenodo metadata) using R and Python, and generates all tables and figures in the paper. Most intermediate derived files are provided, so the majority of table-generating programs can be run directly without re-running the data-preparation steps.
@@ -117,30 +119,30 @@ data/zenodo/zenodo_data_2025_summary.csv
 
 ## Locations
 
-The repository at [https://github.com/AEADataEditor/report-aea-data-editor-2025](https://github.com/AEADataEditor/report-aea-data-editor-2025) contains text, code, data, and output from running the code.
+The repository at [https://github.com/AEADataEditor/report-aea-data-editor-2025](https://github.com/AEADataEditor/report-aea-data-editor-2025) contains code, data, and output from running the code.
 
-The deposit at [http://doi.org/10.3886/E247436V1](http://doi.org/10.3886/E247436V1) contains code and data, as well as output.
+The deposit at [https://doi.org/10.3886/E247436V1](https://doi.org/10.3886/E247436V1) contains code and data, as well as output.
 
 ## Citing the report
 
-> Vilhuber, Lars. 2026. "Report of the AEA Data Editor." AEA Papers and Proceedings. TBD
+> Vilhuber, Lars. 2026. "Report of the AEA Data Editor." AEA Papers and Proceedings 116: 890–904. DOI: [10.1257/pandp.116.890](https://doi.org/10.1257/pandp.116.890)
 
 ```
 @article{ReportDE2026,
 Author = {Vilhuber, Lars},
-Title = {Report by the {AEA} Data Editor},
+Title = {Report of the {AEA} Data Editor},
 Journal = {AEA Papers and Proceedings},
-Volume = {115},
+Volume = {116},
 Year = {2026},
 Month = {May},
-Pages = {xxx},
-DOI = {10.1257/pandp.115.xxx},
-URL = {}}
+Pages = {890--904},
+DOI = {10.1257/pandp.116.890},
+URL = {https://doi.org/10.1257/pandp.116.890}}
 ```
 
 ## Citing the code and data
 
-> Vilhuber, Lars. 2026. "Code and Data for: Report of the AEA Data Editor for 2025."  American Economic Association  [publisher], UPDATED DOI
+> Vilhuber, Lars. 2026. "Code and Data for: Report of the AEA Data Editor for 2025."  American Economic Association [publisher], Inter-university Consortium for Political and Social Research [distributor]. [https://doi.org/10.3886/E247436V1](https://doi.org/10.3886/E247436V1)
 
 ## Computational requirements
 
